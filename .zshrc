@@ -152,3 +152,12 @@ function _marks {
 compctl -K _marks jump
 compctl -K _marks unmark
 #### End folder jumping / marking
+
+
+expand-or-complete-with-dots() {
+    echo -n "\e[34m......\e[0m"
+    zle expand-or-complete
+    zle redisplay
+}
+zle -N expand-or-complete-with-dots
+bindkey "^I" expand-or-complete-with-dots
