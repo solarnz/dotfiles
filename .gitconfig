@@ -1,0 +1,28 @@
+[core]
+    editor = vim
+    excludesfile = ~/.gitignore_global
+
+[color]
+    ui = auto
+
+[merge]
+    tool = vimdiff
+
+[alias]
+    wdiff = diff --word-diff
+
+[user]
+    name = Chris Trotman
+    email = chris@trotman.io
+
+[include]
+    path = .gitconfig_local
+
+[push]
+    default = current
+
+[rebase]
+    stat = true
+
+[diff]
+    context = 5
