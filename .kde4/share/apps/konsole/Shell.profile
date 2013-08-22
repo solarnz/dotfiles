@@ -9,6 +9,7 @@ CursorShape=0
 [General]
 Name=Shell
 Parent=FALLBACK/
+SaveGeometryOnExit=false
 ShowTerminalSizeHint=false
 
 [Scrolling]
