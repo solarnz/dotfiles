@@ -34,10 +34,10 @@ bindsym $mod+Shift+q kill
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run -l 20
 
-bindsym $mod+z exec quickswitch.py
-bindsym $mod+x exec "quickswitch.py -w"
+bindsym $mod+z exec "~/.local/bin/quickswitch.py"
+bindsym $mod+x exec "~/.local/bin/quickswitch.py -w"
 bindsym $mod+c exec i3-input -F 'rename workspace to "%s"' -P 'New workspace name: '
-bindsym $mod+b exec "quickswitch.py -s"
+bindsym $mod+b exec "~/.local/bin/quickswitch.py -s"
 bindsym $mod+Shift+b move scratchpad
 
 # change focus
