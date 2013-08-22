@@ -40,6 +40,13 @@ bindsym $mod+c exec i3-input -F 'rename workspace to "%s"' -P 'New workspace nam
 bindsym $mod+b exec "~/.local/bin/quickswitch.py -s"
 bindsym $mod+Shift+b move scratchpad
 
+bindsym Print exec "mpc prev"
+bindsym Shift+Print exec "mpc volume -1"
+
+bindsym Scroll_Lock exec "mpc toggle"
+
+bindsym Pause exec "mpc next"
+bindsym Shift+Pause exec "mpc volume +1"
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
