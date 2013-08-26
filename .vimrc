@@ -10,3 +10,4 @@ source $HOME/.vim/50-plugins-tagbar.vim
 source $HOME/.vim/50-plugins-unite.vim
 source $HOME/.vim/50-plugins-lightline.vim
 source $HOME/.vim/50-plugins-move.vim
+source $HOME/.vim/50-plugins-python-mode.vim
