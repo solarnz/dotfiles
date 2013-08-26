@@ -28,7 +28,7 @@ NeoBundle 'majutsushi/tagbar'
 NeoBundle 'jnwhiteh/vim-golang'
 NeoBundle 'corntrace/bufexplorer'
 NeoBundle 'rking/ag.vim'
-NeoBundle 'davidhalter/jedi-vim'
+NeoBundle 'klen/python-mode'
 
 NeoBundle 'Shougo/vimproc.vim', {
 \     'build': {
