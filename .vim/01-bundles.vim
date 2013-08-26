@@ -30,6 +30,7 @@ NeoBundle 'corntrace/bufexplorer'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'klen/python-mode'
 NeoBundle 'matze/vim-move'
+NeoBundle 'jelera/vim-javascript-syntax'
 
 NeoBundle 'Shougo/vimproc.vim', {
 \     'build': {
