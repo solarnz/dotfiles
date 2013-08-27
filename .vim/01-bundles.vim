@@ -31,6 +31,7 @@ NeoBundle 'rking/ag.vim'
 NeoBundle 'klen/python-mode'
 NeoBundle 'matze/vim-move'
 NeoBundle 'jelera/vim-javascript-syntax'
+NeoBundle 'terryma/vim-multiple-cursors'
 
 NeoBundle 'Shougo/vimproc.vim', {
 \     'build': {
