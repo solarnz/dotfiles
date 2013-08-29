@@ -1,12 +1,34 @@
 filetype off
 
+" Setup NeoBundle - The hard way, without using submodules!
 if has('vim_starting')
-    set rtp+=~/.vim/bundle/neobundle.vim/
+    " Install the bundles after we have installed neo bundle
+    let s:install_neo_bundles = 0
+
+    " Clone and or Load NeoBundle
+    let s:neobundle_dir = expand('~/.vim/bundle')
+    if isdirectory('neobundle.vim')
+        set runtimepath^=neobundle.vim
+    elseif finddir('neobundle.vim', '.;') != ''
+        execute 'set runtimepath^=' . finddir('neobundle.vim', '.;')
+    elseif &runtimepath !~ '/neobundle.vim'
+        if !isdirectory(s:neobundle_dir.'/neobundle.vim')
+            execute printf('!git clone %s://github.com/Shougo/neobundle.vim.git',
+                        \ (exists('$http_proxy') ? 'https' : 'git'))
+                        \ s:neobundle_dir.'/neobundle.vim'
+            let s:install_neo_bundles = 1
+        endif
+
+        execute 'set runtimepath^=' . s:neobundle_dir.'/neobundle.vim'
+    endif
+
+    let g:neobundle#enable_tail_path = 1
+    let g:neobundle#types#git#default_protocol = 'git'
+    call neobundle#rc(s:neobundle_dir)
 endif
 
-call neobundle#rc(expand('~/.vim/bundle/'))
-
-let g:neobundle#types#git#default_protocol = 'git'
+" Allow NeoBundle to update itself O.o
+NeoBundleFetch 'Shougo/neobundle.vim'
 
 NeoBundle 'git://git.wincent.com/command-t.git', {
 \   'build': {
@@ -14,24 +36,17 @@ NeoBundle 'git://git.wincent.com/command-t.git', {
 \       'unix': 'cd ruby/command-t; ruby extconf.rb; make'
 \   }
 \}
-
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-git'
 NeoBundle 'tpope/vim-obsession'
 NeoBundle 'tpope/vim-speeddating'
-NeoBundle 'solarnz/molokai'
 NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'jigish/vim-thrift'
 NeoBundle 'majutsushi/tagbar'
-NeoBundle 'jnwhiteh/vim-golang'
 NeoBundle 'corntrace/bufexplorer'
 NeoBundle 'rking/ag.vim'
-NeoBundle 'klen/python-mode'
 NeoBundle 'matze/vim-move'
-NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'terryma/vim-multiple-cursors'
-
 NeoBundle 'Shougo/vimproc.vim', {
 \     'build': {
 \        'mac': 'make',
@@ -40,11 +55,22 @@ NeoBundle 'Shougo/vimproc.vim', {
 \}
 
 NeoBundle 'Shougo/unite.vim', {'depends': [ 'Shougo/vimproc.vim' ]}
+
+" Theme / Looks
+NeoBundle 'solarnz/molokai'
 NeoBundle 'itchyny/lightline.vim'
 
-"CSS
+" Language plugins
+NeoBundle 'jigish/vim-thrift'
+NeoBundle 'jelera/vim-javascript-syntax'
+NeoBundle 'jnwhiteh/vim-golang'
+NeoBundle 'klen/python-mode'
 NeoBundle "groenewege/vim-less"
 NeoBundle "hail2u/vim-css3-syntax"
+
+if has('vim_starting') && s:install_neo_bundles == 1
+    NeoBundleInstall
+endif
 
 set encoding=utf-8
 filetype plugin indent on
