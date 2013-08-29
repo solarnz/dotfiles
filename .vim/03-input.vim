@@ -26,8 +26,12 @@ nnoremap <Leader>n :tabnew <CR>
 nnoremap <Leader>q :q <CR>
 nnoremap <C-W>t :tabnew <CR>
 nnoremap <Leader><Backspace> :undo <CR>
+
 nnoremap <Leader>y :Unite history/yank<cr>
 nnoremap <Leader>b :Unite buffer<CR>
+nnoremap <Leader>u :UniteResume<CR>
+nnoremap <Leader>a :Unite outline<CR>
+
 nnoremap ` :
 noremap   <Up>     <NOP>
 noremap   <Down>   <NOP>
