@@ -59,7 +59,7 @@ NeoBundle 'Shougo/vimproc.vim', {
 \}
 
 NeoBundle 'Shougo/unite.vim', {'depends': [ 'Shougo/vimproc.vim' ]}
-NeoBundle 'sjl/gundo.vim'
+NeoBundle 'mbbill/undotree'
 
 " Theme / Looks
 NeoBundle 'solarnz/molokai'
