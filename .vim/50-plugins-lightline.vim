@@ -2,7 +2,7 @@ let g:lightline = {
       \ 'colorscheme': 'default',
       \ 'mode_map': { 'c': 'NORMAL' },
       \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ] ]
+      \   'left': [ [ 'mode' ], [ 'fugitive', 'filename' ] ],
       \ },
       \ 'component_function': {
       \   'modified': 'MyModified',
@@ -15,7 +15,7 @@ let g:lightline = {
       \   'mode': 'MyMode',
       \ },
       \ 'separator': { 'left': '', 'right': '' },
-      \ 'subseparator': { 'left': '>', 'right': '' }
+      \ 'subseparator': { 'left': '>', 'right': '' },
       \ }
 
 function! MyModified()
@@ -52,5 +52,5 @@ function! MyFileencoding()
 endfunction
 
 function! MyMode()
-  return winwidth('.') > 60 ? lightline#mode() : ''
+  return winwidth('.') > 60 ? lightline#mode() . (&paste ? ' PASTE' : '') : ''
 endfunction
