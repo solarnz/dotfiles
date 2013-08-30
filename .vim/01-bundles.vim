@@ -30,12 +30,15 @@ endif
 " Allow NeoBundle to update itself O.o
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-NeoBundle 'git://git.wincent.com/command-t.git', {
-\   'build': {
-\       'mac': 'cd ruby/command-t; ruby extconf.rb; make',
-\       'unix': 'cd ruby/command-t; ruby extconf.rb; make'
-\   }
-\}
+if has('ruby')
+    NeoBundle 'git://git.wincent.com/command-t.git', {
+    \   'build': {
+    \       'mac': 'cd ruby/command-t; ruby extconf.rb; make',
+    \       'unix': 'cd ruby/command-t; ruby extconf.rb; make'
+    \   }
+    \}
+endif
+
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-git'

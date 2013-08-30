@@ -27,6 +27,12 @@ nnoremap <Leader>q :q <CR>
 nnoremap <C-W>t :tabnew <CR>
 nnoremap <Leader><Backspace> :undo <CR>
 
+if has('ruby')
+    nnoremap <Leader>t :CommandT<CR>
+else
+    nnoremap <Leader>t :Unite file_rec/async<CR>
+endif
+
 nnoremap <Leader>y :Unite history/yank<cr>
 nnoremap <Leader>b :Unite buffer<CR>
 nnoremap <Leader>u :UniteResume<CR>
