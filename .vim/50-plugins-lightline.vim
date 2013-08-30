@@ -2,7 +2,12 @@ let g:lightline = {
       \ 'colorscheme': 'default',
       \ 'mode_map': { 'c': 'NORMAL' },
       \ 'active': {
-      \   'left': [ [ 'mode' ], [ 'fugitive', 'filename' ] ],
+      \   'left': [['mode' ], ['fugitive', 'filename']],
+      \   'right': [['lineinfo'], ['percent'], ['fileformat', 'fileencoding', 'filetype']]
+      \ },
+      \ 'inactive': {
+      \   'left': [['filename']],
+      \   'right': [['lineinfo']]
       \ },
       \ 'component_function': {
       \   'modified': 'MyModified',
