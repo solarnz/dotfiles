@@ -1,5 +1,5 @@
 set viminfo='10,\"9900,:20,%,n~/.viminfo
 
-for script_name in split(globpath('$HOME/.vim/', '*.vim'))
-    exec ":source " . script_name
+for s:script_name in split(globpath('$HOME/.vim/', '*.vim'))
+    exec ":source " . s:script_name
 endfor
