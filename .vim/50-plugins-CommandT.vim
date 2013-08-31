@@ -3,7 +3,7 @@
 set wildignore+=build/*
 set wildignore+=public/build/*
 set wildignore+=exam/*
-set wildignore+=*/.pyc
+set wildignore+=*.pyc
 
 let g:CommandTCancelMap=['<ESC>','<C-c>']
 let g:CommandTMaxFiles=999999
