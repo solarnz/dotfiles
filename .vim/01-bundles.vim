@@ -39,6 +39,7 @@ if has('ruby')
     \}
 endif
 
+NeoBundle 'godlygeek/tabular'
 NeoBundle 'majutsushi/tagbar'
 NeoBundle 'matze/vim-move'
 NeoBundle 'mbbill/undotree'
