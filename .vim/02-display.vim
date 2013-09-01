@@ -22,14 +22,9 @@ hi SpellBad term=reverse ctermfg=white ctermbg=darkred
 " Always show the status bar at the bottom of the window
 set laststatus=2
 set incsearch
-if ! has('gui_running')
-    set ttimeoutlen=10
-    augroup FastEscape
-        autocmd!
-        au InsertEnter * set timeoutlen=0
-        au InsertLeave * set timeoutlen=1000
-    augroup END
-endif
 
 set noshowmode
 set list lcs=trail:·,tab:»·
+
+let &t_SI = "\e]50;CursorShape=1\x7"
+let &t_EI = "\e]50;CursorShape=0\x7"
