@@ -24,6 +24,7 @@ nnoremap <Leader>l :tabnext <CR>
 nnoremap <Leader><Right> :tabnext <CR>
 nnoremap <Leader>n :tabnew <CR>
 nnoremap <Leader>q :q <CR>
+nnoremap <Leader>Q :wq<CR>
 nnoremap <C-W>t :tabnew <CR>
 nnoremap <Leader><Backspace> :undo <CR>
 
@@ -43,3 +44,6 @@ noremap   <Up>     <NOP>
 noremap   <Down>   <NOP>
 noremap   <Left>   <NOP>
 noremap   <Right>  <NOP>
+
+" Easy shortcut to switch back to normal mode
+inoremap jk <esc>
