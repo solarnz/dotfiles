@@ -39,31 +39,30 @@ if has('ruby')
     \}
 endif
 
+NeoBundle 'majutsushi/tagbar'
+NeoBundle 'matze/vim-move'
+NeoBundle 'mbbill/undotree'
+NeoBundle 'rking/ag.vim'
 NeoBundle 'scrooloose/nerdcommenter'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'Shougo/unite.vim', {'depends': [ 'Shougo/vimproc.vim' ]}
+NeoBundle 'Shougo/unite-outline'
+NeoBundle 'Shougo/vimproc.vim', {
+            \     'build': {
+            \        'mac': 'make',
+            \        'unix': 'make'
+            \    }
+            \}
+NeoBundle 'terryma/vim-multiple-cursors'
+NeoBundle 'tpope/vim-abolish'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-git'
 NeoBundle 'tpope/vim-obsession'
 NeoBundle 'tpope/vim-speeddating'
-NeoBundle 'tpope/vim-abolish'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'Shougo/unite-outline'
-NeoBundle 'majutsushi/tagbar'
-NeoBundle 'rking/ag.vim'
-NeoBundle 'matze/vim-move'
-NeoBundle 'terryma/vim-multiple-cursors'
-NeoBundle 'Shougo/vimproc.vim', {
-\     'build': {
-\        'mac': 'make',
-\        'unix': 'make'
-\    }
-\}
-
-NeoBundle 'Shougo/unite.vim', {'depends': [ 'Shougo/vimproc.vim' ]}
-NeoBundle 'mbbill/undotree'
 
 " Theme / Looks
-NeoBundle 'solarnz/molokai'
 NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'solarnz/molokai'
 
 " Language plugins
 NeoBundle 'jigish/vim-thrift'
