@@ -40,10 +40,20 @@ nnoremap <Leader>u :UniteResume<CR>
 nnoremap <Leader>a :Unite outline<CR>
 
 nnoremap ` :
-noremap   <Up>     <NOP>
-noremap   <Down>   <NOP>
-noremap   <Left>   <NOP>
-noremap   <Right>  <NOP>
+
+" Disable the arrow keys
+noremap    <Up>     <NOP>
+noremap    <Down>   <NOP>
+noremap    <Left>   <NOP>
+noremap    <Right>  <NOP>
+inoremap   <Up>     <NOP>
+inoremap   <Down>   <NOP>
+inoremap   <Left>   <NOP>
+inoremap   <Right>  <NOP>
+vnoremap   <Up>     <NOP>
+vnoremap   <Down>   <NOP>
+vnoremap   <Left>   <NOP>
+vnoremap   <Right>  <NOP>
 
 " Easy shortcut to switch back to normal mode
 inoremap jk <esc>
