@@ -66,7 +66,7 @@ NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'solarnz/molokai'
 
 " Language plugins
-NeoBundle 'jigish/vim-thrift'
+NeoBundle 'solarnz/thrift.vim'
 NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'jnwhiteh/vim-golang'
 NeoBundle 'klen/python-mode'
