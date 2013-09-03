@@ -47,7 +47,7 @@ NeoBundle 'rking/ag.vim'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'Shougo/unite.vim', {'depends': [ 'Shougo/vimproc.vim' ]}
-NeoBundle 'Shougo/unite-outline'
+NeoBundle 'solarnz/unite-outline'
 NeoBundle 'Shougo/vimproc.vim', {
             \     'build': {
             \        'mac': 'make',
