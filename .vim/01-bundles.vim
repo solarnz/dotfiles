@@ -60,6 +60,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-git'
 NeoBundle 'tpope/vim-obsession'
 NeoBundle 'tpope/vim-speeddating'
+NeoBundle 'zhaocai/DirDiff.vim'
 
 " Theme / Looks
 NeoBundle 'itchyny/lightline.vim'
