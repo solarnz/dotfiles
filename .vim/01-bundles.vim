@@ -48,6 +48,7 @@ NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'Shougo/unite.vim', {'depends': [ 'Shougo/vimproc.vim' ]}
 NeoBundle 'solarnz/unite-outline'
+NeoBundle 'Shougo/unite-sudo'
 NeoBundle 'Shougo/vimproc.vim', {
             \     'build': {
             \        'mac': 'make',
@@ -61,6 +62,7 @@ NeoBundle 'tpope/vim-git'
 NeoBundle 'tpope/vim-obsession'
 NeoBundle 'tpope/vim-speeddating'
 NeoBundle 'zhaocai/DirDiff.vim'
+NeoBundle 'junegunn/vim-easy-align' " A simple Vim alignment plugin
 
 " Theme / Looks
 NeoBundle 'itchyny/lightline.vim'
