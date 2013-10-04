@@ -41,12 +41,17 @@ bindsym $mod+b exec "~/.local/bin/quickswitch.py -s"
 bindsym $mod+Shift+b move scratchpad
 
 bindsym Print exec "mpc prev"
+bindsym XF86AudioPrev exec "mpc prev"
 bindsym Shift+Print exec "mpc volume -1"
+bindsym XF86AudioLowerVolume exec "mpc volume -1"
 
 bindsym Scroll_Lock exec "mpc toggle"
+bindsym XF86AudioPlay exec "mpc toggle"
 
 bindsym Pause exec "mpc next"
+bindsym XF86AudioNext exec "mpc next"
 bindsym Shift+Pause exec "mpc volume +1"
+bindsym XF86AudioRaiseVolume exec "mpc volume +1"
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
