@@ -7,6 +7,7 @@ LineSpacing=0
 CursorShape=0
 
 [General]
+LocalTabTitleFormat=%d : %n : %w
 Name=Shell
 Parent=FALLBACK/
 SaveGeometryOnExit=false
