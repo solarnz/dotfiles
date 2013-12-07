@@ -9,7 +9,6 @@ set matchpairs=(:),{:},[:],<:>
 set nu
 
 " File types
-au BufRead,BufNewFile *.thrift set filetype=thrift
 autocmd FileType gitcommit DiffGitCached | wincmd L | wincmd h
 
 "Extra highlighting settings
