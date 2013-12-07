@@ -1,5 +1,11 @@
 set background=dark
-colorscheme molokai
+
+try
+    colorscheme molokai
+catch /^Vim\%((\a\+)\)\=:E185/
+    " Well, not much I can do at the moment
+endtry
+
 set autoindent
 
 set showmatch
