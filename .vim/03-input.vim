@@ -41,6 +41,16 @@ nnoremap <Leader>a :Unite outline<CR>
 
 nnoremap ` :
 
+" Easier window movement keys for the teck.
+nnoremap tn :split <CR>
+nnoremap tv :vsplit <CR>
+nnoremap tr :tabnew <CR>
+
+nnoremap th :wincmd h <CR>
+nnoremap tj :wincmd j <CR>
+nnoremap tk :wincmd k <CR>
+nnoremap tl :wincmd l <CR>
+
 " Disable the arrow keys
 noremap    <Up>     <NOP>
 noremap    <Down>   <NOP>
