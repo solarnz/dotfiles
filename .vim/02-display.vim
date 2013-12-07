@@ -22,7 +22,11 @@ hi SpellBad term=reverse ctermfg=white ctermbg=darkred
 set laststatus=2
 set incsearch
 
-set noshowmode
+" Don't show the mode if we are using lightline.
+if exists('g:solarnz_will_load_lightline')
+    set noshowmode
+endif
+
 set list lcs=trail:·,tab:»·
 
 let &t_SI = "\e]50;CursorShape=1\x7"

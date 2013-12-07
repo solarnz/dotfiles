@@ -64,6 +64,7 @@ NeoBundle 'zhaocai/DirDiff.vim'
 NeoBundle 'junegunn/vim-easy-align' " A simple Vim alignment plugin
 
 " Theme / Looks
+let g:solarnz_will_load_lightline = 1
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'solarnz/molokai'
 
