@@ -31,7 +31,7 @@ endif
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 if has('ruby')
-    NeoBundle 'git://git.wincent.com/command-t.git', {
+    NeoBundle 'wincent/Command-T', {
     \   'build': {
     \       'mac': 'cd ruby/command-t; ruby extconf.rb; make',
     \       'unix': 'cd ruby/command-t; ruby extconf.rb; make'
