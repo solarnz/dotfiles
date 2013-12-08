@@ -62,6 +62,7 @@ NeoBundle 'tpope/vim-obsession'
 NeoBundle 'tpope/vim-speeddating'
 NeoBundle 'zhaocai/DirDiff.vim'
 NeoBundle 'junegunn/vim-easy-align' " A simple Vim alignment plugin
+NeoBundle 'scrooloose/syntastic'
 
 " Theme / Looks
 let g:solarnz_will_load_lightline = 1
@@ -72,11 +73,12 @@ NeoBundle 'amix/vim-zenroom'
 " Language plugins
 NeoBundle 'solarnz/thrift.vim'
 NeoBundle 'jelera/vim-javascript-syntax'
-NeoBundle 'jnwhiteh/vim-golang'
 NeoBundle 'klen/python-mode'
+NeoBundle 'jnwhiteh/vim-golang'
 NeoBundle "groenewege/vim-less"
 NeoBundle "hail2u/vim-css3-syntax"
 NeoBundle "rodjek/vim-puppet"
+NeoBundle 'hdima/python-syntax'
 
 if has('vim_starting') && s:install_neo_bundles == 1
     NeoBundleInstall

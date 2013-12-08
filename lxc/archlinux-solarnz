@@ -28,8 +28,8 @@
 arch=$(uname -m)
 lxc_network_type="veth"
 lxc_network_link="br0"
-lxc_network_ip="192.168.1.30/24"
-lxc_network_gateway="192.168.1.1"
+#lxc_network_ip="192.168.1.30/24"
+#lxc_network_gateway="192.168.1.1"
 default_path="/var/lib/lxc"
 default_locale="en-US.UTF-8"
 default_timezone="UTC"
@@ -71,7 +71,7 @@ base_packages=(
     "man-db"
     "base-devel"
     "openssh"
-    "vim"
+    "gvim"
 )
 declare -a additional_packages
 
@@ -127,6 +127,7 @@ ln -s /dev/null /etc/systemd/system/systemd-udevd-kernel.socket
 ln -s /dev/null /etc/systemd/system/proc-sys-fs-binfmt_misc.automount
 # set default systemd target
 ln -s /lib/systemd/system/multi-user.target /etc/systemd/system/default.target
+ln -s '/usr/lib/systemd/system/dhcpcd@eth0.service' '/etc/systemd/system/multi-user.target.wants/dhcpcd@eth0.service'
 ln -s '/usr/lib/systemd/system/sshd.service' '/etc/systemd/system/multi-user.target.wants/sshd.service'
 useradd -m -G wheel chris
 mkdir /home/chris/.ssh
@@ -156,8 +157,6 @@ lxc.stopsignal=SIGRTMIN+4
 #networking
 lxc.network.type=${lxc_network_type}
 lxc.network.link=${lxc_network_link}
-lxc.network.ipv4=${lxc_network_ip}
-lxc.network.ipv4.gateway=${lxc_network_gateway}
 lxc.network.flags=up
 lxc.network.name=eth0
 lxc.network.mtu=1500

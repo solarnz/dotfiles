@@ -7,4 +7,3 @@ let g:pymode_breakpoint_key = '<C-c><Leader>b'
 let g:pymode_doc = 0
 let g:pymode_rope = 0
 let g:pymode_breakpoint = 0
-

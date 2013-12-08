@@ -13,7 +13,7 @@
 
 [user]
     name = Chris Trotman
-    email = chris@trotman.io
+    email = chris@freelancer.com
 
 [include]
     path = .gitconfig_local
@@ -25,4 +25,4 @@
     stat = true
 
 [diff]
-    context = 5
+    context = 15

@@ -1,4 +1,6 @@
 [Appearance]
+AntiAliasFonts=true
+BoldIntense=true
 ColorScheme=Linux
 Font=Droid Sans Mono,8,-1,5,50,0,0,0,0,0
 LineSpacing=0
