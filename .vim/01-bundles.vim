@@ -67,6 +67,7 @@ NeoBundle 'junegunn/vim-easy-align' " A simple Vim alignment plugin
 let g:solarnz_will_load_lightline = 1
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'solarnz/molokai'
+NeoBundle 'amix/vim-zenroom'
 
 " Language plugins
 NeoBundle 'solarnz/thrift.vim'
