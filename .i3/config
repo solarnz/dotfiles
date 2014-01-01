@@ -161,6 +161,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # Locks the workstation
 bindsym $mod+Delete exec "i3lock -c 000000"
+bindsym $mod1+Delete exec xlock
 
 bindsym $mod1+h exec "spotify-control Previous"
 bindsym $mod1+l exec "spotify-control Next"
