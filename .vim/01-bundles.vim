@@ -67,7 +67,7 @@ NeoBundle 'scrooloose/syntastic'
 let g:solarnz_will_load_lightline = 1
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'solarnz/molokai'
-NeoBundle 'amix/vim-zenroom'
+NeoBundle 'junegunn/goyo.vim'
 
 " Language plugins
 NeoBundle 'solarnz/thrift.vim'

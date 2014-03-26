@@ -73,3 +73,5 @@ noremap      <F1>    <ESC>
 inoremap     <F1>    <ESC>
 vnoremap     <F1>    <ESC>
 nnoremap     <F1>    <ESC>
+
+noremap <Leader>m :noh <CR>
