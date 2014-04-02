@@ -43,7 +43,7 @@ NeoBundle 'godlygeek/tabular'
 NeoBundle 'matze/vim-move'
 NeoBundle 'mbbill/undotree'
 NeoBundle 'rking/ag.vim'
-NeoBundle 'scrooloose/nerdcommenter'
+NeoBundle 'solarnz/nerdcommenter'
 NeoBundle 'Shougo/unite.vim', {'depends': [ 'Shougo/vimproc.vim' ]}
 NeoBundle 'solarnz/unite-outline'
 NeoBundle 'Shougo/unite-sudo'
