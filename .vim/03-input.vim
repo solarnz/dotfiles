@@ -38,6 +38,7 @@ nnoremap <Leader>y :Unite history/yank<cr>
 nnoremap <Leader>b :Unite buffer<CR>
 nnoremap <Leader>u :UniteResume<CR>
 nnoremap <Leader>a :Unite outline<CR>
+nnoremap <Leader>g :Goyo <CR>
 
 nnoremap ` :
 
