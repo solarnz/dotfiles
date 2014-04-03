@@ -209,3 +209,4 @@ assign [class="^Google-chrome.*$" instance="^crx_nckgahadagoaajjgafhacjanaoiihap
 # Start misc programs / scripts
 exec xfce4-clipman
 exec ~/.i3/local.sh
+exec xmodmap ~/.Xmodmap
