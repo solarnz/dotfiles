@@ -39,6 +39,7 @@ bindsym $mod+x exec "~/.local/bin/quickswitch.py -w"
 bindsym $mod+c exec i3-input -F 'rename workspace to "%s"' -P 'New workspace name: '
 bindsym $mod+b exec "~/.local/bin/quickswitch.py -s"
 bindsym $mod+Shift+b move scratchpad
+bindsym $mod+g exec i3-input -F 'exec --no-startup-id "redshift -O %sK"' -P "Temperature (1000-6500)"
 
 bindsym Print exec "mpc prev"
 bindsym XF86AudioPrev exec "mpc prev"
