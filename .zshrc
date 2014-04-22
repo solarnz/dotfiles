@@ -125,7 +125,7 @@ setopt extendedglob
 zstyle ':completion:*' menu select
 
 if [[ $SSH_CONNECTION == "" ]]; then
-    eval `keychain --eval keychain ~/.ssh/personal ~/.ssh/id_rsa ~/.ssh/freelancer`
+    eval `keychain --eval keychain $(ls ~/.ssh | grep -v pub | grep -v authorized_keys | grep -v known_hosts | grep -v config) `
 fi
 
 export VIRTUAL_ENV_DISABLE_PROMPT=1
