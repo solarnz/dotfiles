@@ -13,7 +13,7 @@
 
 [user]
     name = Chris Trotman
-    email = chris@freelancer.com
+    email = chris@trotman.io
 
 [include]
     path = .gitconfig_local
