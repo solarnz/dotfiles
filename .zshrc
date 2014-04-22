@@ -167,3 +167,7 @@ export VIRTUALENVWRAPPER_PYTHON=`which python2 || which python`
 export WORKON_HOME=$HOME/virtual_envs
 mkdir -p $WORKON_HOME
 source `which virtualenvwrapper.sh`
+
+if [[ -e .zshrc_local ]]; then
+    source .zshrc_local
+fi
