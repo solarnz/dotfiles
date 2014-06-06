@@ -154,6 +154,21 @@ compctl -K _marks jump
 compctl -K _marks unmark
 #### End folder jumping / marking
 
+#### Begin AWS environment selection
+
+export AWSPATH=$HOME/.aws
+
+function aws {
+    source $AWSPATH/$1
+}
+
+function _aws_envs {
+    reply=($(ls $AWSPATH))
+}
+compctl -K _aws_envs aws
+
+#### End AWS environment selection
+
 
 expand-or-complete-with-dots() {
     echo -n "\e[31m...\e[0m"
