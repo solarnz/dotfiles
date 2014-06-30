@@ -81,3 +81,8 @@ endif
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+
+""" Don't automatically close the preview window
+let g:neocomplete#enable_auto_close_preview = 1
+
+set completeopt-=preview
