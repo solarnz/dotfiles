@@ -74,7 +74,7 @@ NeoBundle 'junegunn/goyo.vim'
 " Language plugins
 NeoBundle 'solarnz/thrift.vim'
 NeoBundle 'jelera/vim-javascript-syntax'
-NeoBundle 'klen/python-mode'
+NeoBundle 'klen/python-mode', 'master'
 NeoBundle 'jnwhiteh/vim-golang'
 NeoBundle "groenewege/vim-less"
 NeoBundle "hail2u/vim-css3-syntax"
