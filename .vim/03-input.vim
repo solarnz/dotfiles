@@ -35,8 +35,6 @@ else
     nnoremap <Leader>t :Unite file_rec/async<CR>
 endif
 
-nnoremap <Leader>g :Goyo <CR>
-
 nnoremap ` :
 
 " Easier window movement keys for the teck.
