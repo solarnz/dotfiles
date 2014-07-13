@@ -14,9 +14,6 @@ set matchpairs=(:),{:},[:],<:>
 "Show line numbers
 set nu
 
-" File types
-autocmd FileType gitcommit DiffGitCached | wincmd L | wincmd h
-
 "Extra highlighting settings
 au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 au InsertLeave * match ExtraWhitespace /\s\+$/
