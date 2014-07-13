@@ -54,6 +54,8 @@ bindsym Pause exec "mpc next"
 bindsym XF86AudioNext exec "mpc next"
 bindsym Shift+Pause exec "mpc volume +1"
 bindsym XF86AudioRaiseVolume exec "mpc volume +1"
+bindsym XF86MonBrightnessDown exec "xbacklight -dec 10"
+bindsym XF86MonBrightnessUp exec "xbacklight -inc 10"
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
