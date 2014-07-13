@@ -83,6 +83,7 @@ NeoBundle "groenewege/vim-less"
 NeoBundle "hail2u/vim-css3-syntax"
 NeoBundle "rodjek/vim-puppet"
 NeoBundle 'hdima/python-syntax'
+NeoBundle 'airblade/vim-gitgutter'
 
 if has('vim_starting') && s:install_neo_bundles == 1
     NeoBundleInstall
