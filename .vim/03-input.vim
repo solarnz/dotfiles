@@ -29,12 +29,6 @@ nnoremap <Leader>Q :wq<CR>
 nnoremap <C-W>t :tabnew <CR>
 nnoremap <Leader><Backspace> :undo <CR>
 
-if has('ruby')
-    nnoremap <Leader>t :CommandT<CR>
-else
-    nnoremap <Leader>t :Unite file_rec/async<CR>
-endif
-
 nnoremap ` :
 
 " Easier window movement keys for the teck.
