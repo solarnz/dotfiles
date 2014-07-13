@@ -64,6 +64,8 @@ NeoBundle 'junegunn/vim-easy-align' " A simple Vim alignment plugin
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'Shougo/echodoc.vim'
 NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'Shougo/neosnippet'
+NeoBundle 'solarnz/neosnippet-snippets'
 
 " Theme / Looks
 let g:solarnz_will_load_lightline = 1
