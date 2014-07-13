@@ -14,15 +14,13 @@ set matchpairs=(:),{:},[:],<:>
 "Show line numbers
 set nu
 
-" File types
-autocmd FileType gitcommit DiffGitCached | wincmd L | wincmd h
-
 "Extra highlighting settings
 au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 au InsertLeave * match ExtraWhitespace /\s\+$/
 highlight ExtraWhiteSpace ctermbg=52
 setlocal spell spelllang=en_gb
 hi SpellBad term=reverse ctermfg=white ctermbg=darkred
+set hlsearch
 
 " Always show the status bar at the bottom of the window
 set laststatus=2
@@ -50,6 +48,7 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set ruler
+set scrolloff=10
 
 " Set key shortcuts
 set bs=2
@@ -66,17 +65,6 @@ nnoremap <Leader>q :q <CR>
 nnoremap <Leader>Q :wq<CR>
 nnoremap <C-W>t :tabnew <CR>
 nnoremap <Leader><Backspace> :undo <CR>
-
-if has('ruby')
-    nnoremap <Leader>t :CommandT<CR>
-else
-    nnoremap <Leader>t :Unite file_rec/async<CR>
-endif
-
-nnoremap <Leader>y :Unite history/yank<cr>
-nnoremap <Leader>b :Unite buffer<CR>
-nnoremap <Leader>u :UniteResume<CR>
-nnoremap <Leader>a :Unite outline<CR>
 
 nnoremap ` :
 
@@ -105,7 +93,15 @@ vnoremap   <Left>   <NOP>
 vnoremap   <Right>  <NOP>
 
 " Easy shortcut to switch back to normal mode
+inoremap jj <esc>
 inoremap jk <esc>
+
+noremap      <F1>    <ESC>
+inoremap     <F1>    <ESC>
+vnoremap     <F1>    <ESC>
+nnoremap     <F1>    <ESC>
+
+noremap <Leader>m :noh <CR>
 command! Wq wq
 command! Sudow w !sudo tee %
 command! Q q
