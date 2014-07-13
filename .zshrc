@@ -86,9 +86,17 @@ function git_current_branch() {
   echo \(${ref#refs/heads/}\)
 }
 
+function git_dirty_status() {
+    if command git diff-index --quiet HEAD 2> /dev/null; then
+        echo "%{$fg[green]%}"
+    else
+        echo "%{$fg[red]%}"
+    fi
+}
+
 prompt_gentoo_setup "$@"
 setopt promptsubst
-export RPROMPT=$'%{$fg[green]%}%B$(git_current_branch)%b%{$reset_color%}'
+export RPROMPT=$'%B$(git_dirty_status)$(git_current_branch)%b%{$reset_color%}'
 
 if [[ -x /usr/local/bin/gls ]]; then
     alias ls="gls --color=auto"
