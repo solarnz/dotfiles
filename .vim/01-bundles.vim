@@ -68,6 +68,7 @@ NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'solarnz/neosnippet-snippets'
 NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'solarnz/arcanist.vim'
 
 " Theme / Looks
 let g:solarnz_will_load_lightline = 1
