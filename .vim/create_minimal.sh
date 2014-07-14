@@ -1,1 +1,1 @@
-cat 02-display.vim 03-input.vim 04-commands.vim 06-autocommands.vim bundle/molokai/colors/molokai.vim
+cat 02-display.vim 03-input.vim 04-commands.vim 06-autocommands.vim 70-* bundle/molokai/colors/molokai.vim
