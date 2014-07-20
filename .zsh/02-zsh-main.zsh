@@ -32,13 +32,6 @@ fi
 
 ## work section ##
 
-alias gcd='cd ~/dev/gaf/www/content/gaf-cvs/'
-alias menv="cd ~/dev/messaging; source thr_env/bin/activate;"
-alias gf="fg"
-alias ll="ls -la"
-alias l="ls -l"
-alias sl="ls"
-alias senv="cd ~/Work/Freelancer; source services_env/bin/activate;"
 export ENVIRONMENT="staging-local"
 ## end work section ##
 
