@@ -11,29 +11,7 @@ setopt autocd
 autoload -U colors
 colors
 
-if [[ -x /usr/local/bin/gls ]]; then
-    alias ls="gls --color=auto"
-else
-    alias ls="ls --color"
-fi
-
-if [[ $(uname) == "Darwin" ]]; then
-    PATH="/usr/local/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/sbin:/usr/local/share/python/:/usr/local/share/npm/bin/:$PATH"
-    alias find="gfind"
-    alias tar="gtar"
-fi
-
-if [[ $(uname) == "Linux" ]]; then
-    export PATH=$PATH:~/bin:~/android-dev/android-sdk-linux_x86/platform-tools:~/android-dev/android-sdk-linux_x86/tools:/usr/share/java/apache-ant/bin:/usr/local/sbin
-    export PATH="$PATH:/home/chris/.local/bin:/opt/vagrant/bin:/home/chris/arc/arcanist/bin:/home/chris/local/bin"
-    export TERM=xterm-256color
-fi
-
-
-## work section ##
-
-export ENVIRONMENT="staging-local"
-## end work section ##
+export PATH="$HOME/.local/bin:$PATH"
 
 export EDITOR=vim
 
