@@ -20,9 +20,6 @@ setopt autocd
 setopt extendedglob
 zstyle ':completion:*' menu select
 
-export VIRTUAL_ENV_DISABLE_PROMPT=1
-
-
 #### Begin AWS environment selection
 
 export AWSPATH=$HOME/.aws
