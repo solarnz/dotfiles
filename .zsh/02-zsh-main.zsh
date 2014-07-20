@@ -38,10 +38,6 @@ compctl -K _aws_envs aws
 
 #### End AWS environment selection
 
-export VIRTUALENVWRAPPER_PYTHON=`which python2 || which python`
-export WORKON_HOME=$HOME/virtual_envs
-mkdir -p $WORKON_HOME
-source `which virtualenvwrapper.sh`
 
 if [[ -e $HOME/.zshrc_local ]]; then
     source $HOME/.zshrc_local
