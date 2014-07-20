@@ -20,22 +20,6 @@ setopt autocd
 setopt extendedglob
 zstyle ':completion:*' menu select
 
-#### Begin AWS environment selection
-
-export AWSPATH=$HOME/.aws
-
-function aws {
-    source $AWSPATH/$1
-}
-
-function _aws_envs {
-    reply=($(ls $AWSPATH))
-}
-compctl -K _aws_envs aws
-
-#### End AWS environment selection
-
-
 if [[ -e $HOME/.zshrc_local ]]; then
     source $HOME/.zshrc_local
 fi
