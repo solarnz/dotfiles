@@ -33,6 +33,4 @@ bindkey "^J" down-line-or-history # Ctrl-j
 bindkey "^K" up-line-or-history # Ctrl-k
 bindkey "^L" forward-char #Ctrl-l
 
-bindkey "^?" backward-kill-word # Ctrl-Backspace
-
 # vim:ft=zsh
