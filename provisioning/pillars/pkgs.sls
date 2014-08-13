@@ -1,0 +1,2 @@
+pkgs:
+    vim: gvim
