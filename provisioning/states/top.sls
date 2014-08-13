@@ -12,3 +12,8 @@ base:
     'nodename:kappa':
         - match: grain
         - desktop
+
+    # My work desktop
+    'nodename:chris-trotman':
+        - match: grain
+        - desktop
