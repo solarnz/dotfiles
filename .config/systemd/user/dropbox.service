@@ -1,0 +1,10 @@
+[Unit]
+Description=Dropbox Network Storage Daemon
+
+[Service]
+Type=simple
+Environment=DISPLAY=:0
+ExecStart=/usr/bin/dropboxd
+
+[Install]
+WantedBy=mystuff.target

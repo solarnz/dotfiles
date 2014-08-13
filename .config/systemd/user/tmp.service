@@ -1,0 +1,8 @@
+[Unit]
+Description=Remove tmp dir
+
+[Service]
+ExecStart=/usr/bin/bash -c "/usr/bin/rm -rfv %h/tmp/*"
+
+[Install]
+WantedBy=mystuff.target
