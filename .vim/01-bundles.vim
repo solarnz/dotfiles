@@ -33,8 +33,8 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 if has('ruby')
     NeoBundle 'wincent/Command-T', {
     \   'build': {
-    \       'mac': 'cd ruby/command-t; ruby extconf.rb; make',
-    \       'unix': 'cd ruby/command-t; ruby extconf.rb; make'
+    \       'mac': 'rake make',
+    \       'unix': 'rake make'
     \   }
     \}
 endif
