@@ -1,7 +1,12 @@
 desktop:
     pkg.installed:
       - pkgs:
+          - btrfs-progs
           - conky
+          - cryptsetup
+          - dmenu
+          - openbsd-netcat
+          - go
           - i3lock
           - ifplugd
           - kdebase-konsole
@@ -10,14 +15,19 @@ desktop:
           - mpd
           - mpv
           - ncmpcpp
+          - netctl
           - nginx
           - openssh
           - openvpn
+          - pavucontrol
+          - pulseaudio
+          - pulseaudio-alsa
           - redshift
           - scrot
           - xautolock
           - xclip
           - xfce4-clipman-plugin
+          - xorg-xrandr
           - xorg-xrdb
 
 sddm:
