@@ -1,9 +1,9 @@
 desktop:
-    pkg.latest:
+    pkg.installed:
       - pkgs:
           - conky
-          - docker
           - i3lock
+          - ifplugd
           - kdebase-konsole
           - keychain
           - mpc
@@ -29,10 +29,27 @@ sddm:
     - enable: False
 
 lightdm:
-  pkg.latest:
+  pkg.installed:
       - pkgs:
         - lightdm
         - lightdm-gtk2-greeter
+
+  service:
+    - running
+    - enable: True
+
+ntpd:
+  pkg.installed:
+    - pkgs:
+      - ntp
+
+  service:
+    - running
+    - enable: True
+
+docker:
+  pkg:
+    - installed
 
   service:
     - running

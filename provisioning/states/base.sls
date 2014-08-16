@@ -1,6 +1,7 @@
 base:
-    pkg.latest:
+    pkg.installed:
       - pkgs:
+        - {{ pillar['pkgs']['vim'] }}
         - git
         - python
         - sudo

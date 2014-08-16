@@ -1,6 +1,5 @@
 base:
     '*':
-        - vim
         - base
 
     # My laptop
