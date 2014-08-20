@@ -24,6 +24,7 @@ if has('vim_starting')
 
     let g:neobundle#enable_tail_path = 1
     let g:neobundle#types#git#default_protocol = 'git'
+    let g:neobundle#install_process_timeout = 480
     call neobundle#rc(s:neobundle_dir)
 endif
 
@@ -64,6 +65,11 @@ NeoBundle 'junegunn/vim-easy-align' " A simple Vim alignment plugin
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'solarnz/arcanist.vim'
+NeoBundle 'Valloric/YouCompleteMe', {
+            \   'build': {
+            \       'unix': './install.sh'
+            \   }
+            \}
 
 " Theme / Looks
 let g:solarnz_will_load_lightline = 1
