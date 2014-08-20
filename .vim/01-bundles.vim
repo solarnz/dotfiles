@@ -32,7 +32,7 @@ endif
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 if has('ruby')
-    NeoBundle 'wincent/Command-T', {
+    NeoBundle 'wincent/Command-T', '1.10', {
     \   'build': {
     \       'mac': 'rake make',
     \       'unix': 'rake make'
