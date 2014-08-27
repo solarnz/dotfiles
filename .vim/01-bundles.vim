@@ -67,7 +67,14 @@ NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'solarnz/arcanist.vim'
 NeoBundle 'Valloric/YouCompleteMe', {
             \   'build': {
-            \       'unix': './install.sh'
+            \       'unix': './install.sh',
+            \       'mac': './install.sh'
+            \   }
+            \}
+NeoBundle 'marijnh/tern_for_vim', {
+            \   'build': {
+            \       'unix': 'npm install',
+            \       'mac': 'npm install'
             \   }
             \}
 NeoBundle 'editorconfig/editorconfig-vim'
