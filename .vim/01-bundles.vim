@@ -70,6 +70,7 @@ NeoBundle 'Valloric/YouCompleteMe', {
             \       'unix': './install.sh'
             \   }
             \}
+NeoBundle 'editorconfig/editorconfig-vim'
 
 " Theme / Looks
 let g:solarnz_will_load_lightline = 1
