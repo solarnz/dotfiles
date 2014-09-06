@@ -21,16 +21,6 @@ Shortcuts
 Most of the commands here are only mapped to normal mode, unless stated
 otherwise.
 
-Git shortcuts
--------------
-
-======================= =========================
-Keyboard combination    Shortcut description
-======================= =========================
-ga                      Git gutter, stage change
-gu                      Git gutter, revert change
-======================= =========================
-
 Window / Tab shortcuts
 ----------------------
 
