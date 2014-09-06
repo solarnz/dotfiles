@@ -19,7 +19,6 @@ au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 au InsertLeave * match ExtraWhitespace /\s\+$/
 highlight ExtraWhiteSpace ctermbg=52
 setlocal spell spelllang=en_gb
-hi SpellBad term=reverse ctermfg=white ctermbg=darkred
 set hlsearch
 
 " Always show the status bar at the bottom of the window
