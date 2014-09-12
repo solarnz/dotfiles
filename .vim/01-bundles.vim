@@ -77,6 +77,7 @@ NeoBundle 'marijnh/tern_for_vim', {
             \   }
             \}
 NeoBundle 'editorconfig/editorconfig-vim'
+NeoBundle 'vim-scripts/sudo.vim'
 
 " Theme / Looks
 let g:solarnz_will_load_lightline = 1
