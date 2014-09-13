@@ -96,6 +96,7 @@ NeoBundle "hail2u/vim-css3-syntax"
 NeoBundle "rodjek/vim-puppet"
 NeoBundle "saltstack/salt-vim"
 NeoBundle 'hdima/python-syntax'
+NeoBundle 'PotatoesMaster/i3-vim-syntax'
 
 if has('vim_starting') && s:install_neo_bundles == 1
     NeoBundleInstall
