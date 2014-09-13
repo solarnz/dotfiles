@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [[ ! -e $HOME/.git-crypt ]]; then
+    git clone https://github.com/AGWA/git-crypt $HOME/.git-crypt
+    cd $HOME/.git-crypt
+    make
+    cp git-crypt $HOME/.local/bin/
+fi
