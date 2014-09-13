@@ -36,7 +36,7 @@ bindsym $mod+d exec dmenu_run -l 20
 
 bindsym $mod+z exec --no-startup-id "ls ~/workspaces | grep \.sh | dmenu -l 10 | xargs -I{} bash -c  ~/workspaces/{}"
 bindsym $mod+x exec "~/.local/bin/quickswitch.py -w"
-bindsym $mod+c exec i3-input -F 'rename workspace to "%s"' -P 'New workspace name: '
+bindsym $mod+c exec "~/.local/bin/i3-name --set"
 bindsym $mod+b exec "~/.local/bin/quickswitch.py -s"
 bindsym $mod+Shift+b move scratchpad
 bindsym $mod+g exec "echo -e 1000\\n2000\\n3000\\n4000\\n5000\\n6000\\n6500 | dmenu -p 'Gamma (1000-6500)' -l 10| xargs -I{} redshift -O {}"

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+mkdir -p $HOME/.cache/
+touch $HOME/.cache/i3-name
+
+echo $1
+if [[ "$1" == "--set" ]]; then
+    cat $HOME/.cache/i3-name | dmenu -l 20 | $0
+else
+    read NAME
+    echo $NAME >> $HOME/.cache/i3-name
+    TMP=`mktemp`
+    sort $HOME/.cache/i3-name | uniq > $TMP
+    mv $TMP $HOME/.cache/i3-name
+
+    i3-msg rename workspace to \"$NAME\"
+fi
