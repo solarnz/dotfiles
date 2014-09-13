@@ -66,7 +66,6 @@ handle_file_ln() {
 }
 handle_file_ln "/home/chris/.dotfiles/agignore" "/home/chris/.agignore"
 handle_file_ln "/home/chris/.dotfiles/config/fontconfig/conf.d/10-powerline-symbols.conf" "/home/chris/.config/fontconfig/conf.d/10-powerline-symbols.conf"
-handle_file_ln "/home/chris/.dotfiles/config/i3/config" "/home/chris/.config/i3/config"
 handle_file_ln "/home/chris/.dotfiles/config/systemd/user/app@.service" "/home/chris/.config/systemd/user/app@.service"
 handle_file_ln "/home/chris/.dotfiles/config/systemd/user/dropbox.service" "/home/chris/.config/systemd/user/dropbox.service"
 handle_file_ln "/home/chris/.dotfiles/config/systemd/user/mpd.service" "/home/chris/.config/systemd/user/mpd.service"
