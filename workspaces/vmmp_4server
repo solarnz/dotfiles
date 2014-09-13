@@ -24,11 +24,11 @@
                        "x": 0,
                        "y": 0
                     },
-                    "name": "chris : zsh :  – Konsole",
+                    "name": "chris : zsh :  – Xfce4-terminal",
                     "percent": 0.3,
                     "swallows": [
                        {
-                          "class": "^Konsole$"
+                          "class": "^Xfce4-terminal$"
                        }
                     ],
                     "type": "con"
@@ -42,11 +42,11 @@
                        "x": 0,
                        "y": 0
                     },
-                    "name": "chris : zsh :  – Konsole",
+                    "name": "chris : zsh :  – Xfce4-terminal",
                     "percent": 0.7,
                     "swallows": [
                        {
-                          "class": "^Konsole$"
+                          "class": "^Xfce4-terminal$"
                        }
                     ],
                     "type": "con"
@@ -78,11 +78,11 @@
                                "x": 0,
                                "y": 0
                             },
-                            "name": "workspaces : zsh :  – Konsole",
+                            "name": "workspaces : zsh :  – Xfce4-terminal",
                             "percent": 0.5,
                             "swallows": [
                                {
-                                   "class": "^Konsole$"
+                                   "class": "^Xfce4-terminal$"
                                }
                             ],
                             "type": "con"
@@ -96,11 +96,11 @@
                                "x": 0,
                                "y": 0
                             },
-                            "name": "chris : zsh :  – Konsole",
+                            "name": "chris : zsh :  – Xfce4-terminal",
                             "percent": 0.5,
                             "swallows": [
                                {
-                                   "class": "^Konsole$"
+                                   "class": "^Xfce4-terminal$"
                                }
                             ],
                             "type": "con"
@@ -124,11 +124,11 @@
                                "x": 0,
                                "y": 0
                             },
-                            "name": "chris : zsh :  – Konsole",
+                            "name": "chris : zsh :  – Xfce4-terminal",
                             "percent": 0.5,
                             "swallows": [
                                {
-                                   "class": "^Konsole$"
+                                   "class": "^Xfce4-terminal$"
                                }
                             ],
                             "type": "con"
@@ -142,11 +142,11 @@
                                "x": 0,
                                "y": 0
                             },
-                            "name": "chris : zsh :  – Konsole",
+                            "name": "chris : zsh :  – Xfce4-terminal",
                             "percent": 0.5,
                             "swallows": [
                                {
-                                   "class": "^Konsole$"
+                                   "class": "^Xfce4-terminal$"
                                }
                             ],
                             "type": "con"
