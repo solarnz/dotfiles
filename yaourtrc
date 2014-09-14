@@ -1,2 +1,2 @@
 EXPORT=1
-DEVELBUILDDIR="/home/chris/abs/yaourt/"
+DEVELBUILDDIR="$HOME/abs/yaourt/"
