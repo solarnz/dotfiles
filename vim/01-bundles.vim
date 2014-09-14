@@ -89,13 +89,13 @@ NeoBundle 'junegunn/goyo.vim'
 NeoBundle 'solarnz/thrift.vim'
 NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'lukaszb/vim-web-indent'
-NeoBundle 'klen/python-mode', 'master'
 NeoBundle 'jnwhiteh/vim-golang'
 NeoBundle "groenewege/vim-less"
 NeoBundle "hail2u/vim-css3-syntax"
 NeoBundle "rodjek/vim-puppet"
 NeoBundle "saltstack/salt-vim"
-NeoBundle 'hdima/python-syntax'
+NeoBundle 'hynek/vim-python-pep8-indent'
+NeoBundle 'solarnz/python.vim'
 NeoBundle 'PotatoesMaster/i3-vim-syntax'
 
 if has('vim_starting') && s:install_neo_bundles == 1
