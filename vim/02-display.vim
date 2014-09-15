@@ -1,7 +1,9 @@
 set background=dark
 
 try
-    colorscheme molokai
+    set t_Co=256                      " Make vim aware of 256 colorspace
+    let base16colorspace=256          " Enable base16 256 colorspace
+    colorscheme base16-default
 catch /^Vim\%((\a\+)\)\=:E185/
     " Well, not much I can do at the moment
 endtry

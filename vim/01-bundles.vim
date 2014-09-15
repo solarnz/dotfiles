@@ -83,6 +83,7 @@ NeoBundle 'solarnz/whitespace.vim'
 " Theme / Looks
 let g:solarnz_will_load_lightline = 1
 NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'solarnz/molokai'
 NeoBundle 'junegunn/goyo.vim'
 
