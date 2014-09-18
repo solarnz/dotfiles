@@ -1,0 +1,13 @@
+# See: /usr/share/doc/mpd/mpdconf.example
+
+pid_file "~/.mpd/mpd.pid"
+db_file "~/.mpd/mpd.db"
+state_file "~/.mpd/mpdstate"
+playlist_directory "~/.mpd/playlists"
+
+music_directory "~/Music"
+
+audio_output {
+    type        "pulse"
+    name        "My Pulse Output"
+}
