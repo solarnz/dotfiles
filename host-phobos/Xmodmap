@@ -1,0 +1,9 @@
+!
+!  Remap the capslock key to the left shift key.
+!
+keycode 66 = Shift_L
+
+!
+! Remap the X240 print screen key to Super_R
+!
+keycode 107 = Super_R
