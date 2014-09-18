@@ -1,8 +1,8 @@
 
 " Ignore retarded directories
-set wildignore+=build/*
-set wildignore+=public/build/*
-set wildignore+=exam/*
+set wildignore+=**/bower_components/**
+set wildignore+=**/node_modules/**
+set wildignore+=**/build/**
 set wildignore+=*.pyc
 
 let g:CommandTCancelMap=['<ESC>','<C-c>']
