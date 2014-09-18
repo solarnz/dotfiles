@@ -47,10 +47,11 @@ Unite shortcuts
 ======================= =========================
 Keyboard combination    Shortcut description
 ======================= =========================
-<Leader>y               Unite history/yank
-<Leader>b               Unite buffer
 <Leader>a               Unite outline
+<Leader>b               Unite buffer
+<Leader>f               Unite bookmark
 <Leader>t               Unite file (if no ruby)
+<Leader>y               Unite history/yank
 ======================= =========================
 
 Other plugins
