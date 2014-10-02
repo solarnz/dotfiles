@@ -40,7 +40,7 @@ function git_dirty_status() {
 
 prompt_gentoo_setup "$@"
 setopt promptsubst
-export RPROMPT=$'%B$(git_dirty_status)$(git_current_branch)%b%{$reset_color%}'
+export RPROMPT=$'${VIMODE}%B$(git_dirty_status)$(git_current_branch)%b%{$reset_color%}'
 
 
 # vim:ft=zsh
