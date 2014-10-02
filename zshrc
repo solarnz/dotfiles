@@ -1,3 +1,3 @@
-for config in $(ls $HOME/.zsh/*.zsh | sort); do
+for config in $(ls --color=none $HOME/.zsh/*.zsh | sort); do
     source $config
 done
