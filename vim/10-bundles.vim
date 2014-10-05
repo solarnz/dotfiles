@@ -54,7 +54,7 @@ NeoBundle 'Shougo/vimproc.vim', {
             \        'unix': 'make'
             \    }
             \}
-NeoBundle 'terryma/vim-multiple-cursors'
+NeoBundle 'kristijanhusak/vim-multiple-cursors'
 NeoBundle 'tpope/vim-eunuch'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-git'
