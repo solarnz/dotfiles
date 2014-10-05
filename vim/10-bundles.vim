@@ -55,7 +55,6 @@ NeoBundle 'Shougo/vimproc.vim', {
             \    }
             \}
 NeoBundle 'terryma/vim-multiple-cursors'
-NeoBundle 'tpope/vim-abolish'
 NeoBundle 'tpope/vim-eunuch'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-git'
