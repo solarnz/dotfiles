@@ -14,4 +14,4 @@ popd
 rm -rf $TEMP
 
 # Install dotfiles
-$HOME/.local/bin/rcup -d .
+PATH=$PATH:$HOME/.local/bin $HOME/.local/bin/rcup -d .
