@@ -68,6 +68,7 @@ NeoBundle 'tpope/vim-fugitive' " Git integration
 NeoBundle 'tpope/vim-git' " Git syntax highlighting
 NeoBundle 'tpope/vim-obsession' " Better session saving support
 NeoBundle 'tpope/vim-speeddating' " Increments dates correctly
+NeoBundle 'tpope/vim-vinegar' " Improves netrw
 NeoBundle 'zhaocai/DirDiff.vim' " Allows you to diff directories
 NeoBundle 'junegunn/vim-easy-align' " A simple Vim alignment plugin
 NeoBundle 'scrooloose/syntastic' " Runs linters over your code
