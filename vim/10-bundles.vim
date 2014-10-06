@@ -108,6 +108,7 @@ NeoBundle "saltstack/salt-vim" " Salt language suport
 NeoBundle 'hynek/vim-python-pep8-indent' " Better python indentation support
 NeoBundle 'solarnz/python.vim' " Python syntax highlighting
 NeoBundle 'PotatoesMaster/i3-vim-syntax' " i3 configuration highlighting
+NeoBundle 'solarnz/nagios.vim' " Nagios syntax highlighting
 
 if has('vim_starting') && s:install_neo_bundles == 1
     NeoBundleInstall
