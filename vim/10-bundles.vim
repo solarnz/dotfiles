@@ -31,6 +31,9 @@ endif
 " Allow NeoBundle to update itself O.o
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+" Command-T is my favorite file finder. Unfortunately it requires vim to be
+" built with ruby support, so if that is not enabled, there is no point
+" installing the plugin.
 if has('ruby')
     NeoBundle 'wincent/Command-T', {
     \   'build': {
@@ -41,63 +44,69 @@ if has('ruby')
 endif
 
 NeoBundle 'godlygeek/tabular'
-NeoBundle 'matze/vim-move'
-NeoBundle 'mbbill/undotree'
-NeoBundle 'rking/ag.vim'
-NeoBundle 'solarnz/nerdcommenter'
+NeoBundle 'matze/vim-move' " Visually move text around.
+NeoBundle 'mbbill/undotree' " Shows the vim undo tree in a window.
+NeoBundle 'rking/ag.vim' " Integrate ag with vim.
+NeoBundle 'solarnz/nerdcommenter' " Easier commenting and uncommenting.
+" The almighty unite.vim plugin.
 NeoBundle 'Shougo/unite.vim', {'depends': [ 'Shougo/vimproc.vim' ]}
+" My fork of the unite-outline plugin. I added support for the thrift
+" language.
 NeoBundle 'solarnz/unite-outline'
-NeoBundle 'Shougo/unite-sudo'
+" Allows for running processes asynchronously.
 NeoBundle 'Shougo/vimproc.vim', {
             \     'build': {
             \        'mac': 'make',
             \        'unix': 'make'
             \    }
             \}
+" Easy replacement for areas of text. Quicker than writing a regular
+" expression.
 NeoBundle 'kristijanhusak/vim-multiple-cursors'
-NeoBundle 'tpope/vim-eunuch'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'tpope/vim-git'
-NeoBundle 'tpope/vim-obsession'
-NeoBundle 'tpope/vim-speeddating'
-NeoBundle 'zhaocai/DirDiff.vim'
+NeoBundle 'tpope/vim-eunuch' " Unix functions
+NeoBundle 'tpope/vim-fugitive' " Git integration
+NeoBundle 'tpope/vim-git' " Git syntax highlighting
+NeoBundle 'tpope/vim-obsession' " Better session saving support
+NeoBundle 'tpope/vim-speeddating' " Increments dates correctly
+NeoBundle 'zhaocai/DirDiff.vim' " Allows you to diff directories
 NeoBundle 'junegunn/vim-easy-align' " A simple Vim alignment plugin
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'solarnz/arcanist.vim'
+NeoBundle 'scrooloose/syntastic' " Runs linters over your code
+NeoBundle 'solarnz/arcanist.vim' " Arcanist syntax highlighting
+" Awesome autocomplete functionality
 NeoBundle 'Valloric/YouCompleteMe', {
             \   'build': {
             \       'unix': './install.sh',
             \       'mac': './install.sh'
             \   }
             \}
+" Improved autocomplete functionality for javascript
 NeoBundle 'marijnh/tern_for_vim', {
             \   'build': {
             \       'unix': 'npm install',
             \       'mac': 'npm install'
             \   }
             \}
-NeoBundle 'editorconfig/editorconfig-vim'
-NeoBundle 'vim-scripts/sudo.vim'
-NeoBundle 'solarnz/whitespace.vim'
+NeoBundle 'editorconfig/editorconfig-vim' " Editor agnostic project settings
+NeoBundle 'solarnz/whitespace.vim' " Remove trailing whitespace when saving
 
 " Theme / Looks
 let g:solarnz_will_load_lightline = 1
-NeoBundle 'itchyny/lightline.vim'
-NeoBundle 'chriskempson/base16-vim'
-NeoBundle 'junegunn/goyo.vim'
+NeoBundle 'itchyny/lightline.vim' " The best statusbar plugin.
+NeoBundle 'chriskempson/base16-vim' " The base16 color scheme for vim
+NeoBundle 'junegunn/goyo.vim' " Distraction free editing
 
 " Language plugins
-NeoBundle 'solarnz/thrift.vim'
-NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'lukaszb/vim-web-indent'
-NeoBundle 'jnwhiteh/vim-golang'
-NeoBundle "groenewege/vim-less"
-NeoBundle "hail2u/vim-css3-syntax"
-NeoBundle "rodjek/vim-puppet"
-NeoBundle "saltstack/salt-vim"
-NeoBundle 'hynek/vim-python-pep8-indent'
-NeoBundle 'solarnz/python.vim'
-NeoBundle 'PotatoesMaster/i3-vim-syntax'
+NeoBundle 'solarnz/thrift.vim' " Thrift language support
+NeoBundle 'pangloss/vim-javascript' " Javascript language support
+NeoBundle 'lukaszb/vim-web-indent' " Better autoindentation for html and JS
+NeoBundle 'jnwhiteh/vim-golang' " Golang language support
+NeoBundle "groenewege/vim-less" " Less language support
+NeoBundle "hail2u/vim-css3-syntax" " Css language support
+NeoBundle "rodjek/vim-puppet" " Puppet language support
+NeoBundle "saltstack/salt-vim" " Salt language suport
+NeoBundle 'hynek/vim-python-pep8-indent' " Better python indentation support
+NeoBundle 'solarnz/python.vim' " Python syntax highlighting
+NeoBundle 'PotatoesMaster/i3-vim-syntax' " i3 configuration highlighting
 
 if has('vim_starting') && s:install_neo_bundles == 1
     NeoBundleInstall
