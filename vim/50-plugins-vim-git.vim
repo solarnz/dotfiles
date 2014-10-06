@@ -1,9 +1,13 @@
-" Automatically show the git diff when commiting.
-" Also, disable neocomplete (as much as possible) while comitting.
-" NOTE: I tired using NeoCompleteLock or NeoBundleDisable, but these functions
-" are simply not aavailable at the time this code gets run.
+" Automatically show the git diff when running 'git commit'. If the commit
+" window is not the first buffer opened, it will not show the diff panel. This
+" is useful for using the Gstatus / Gcommit functions from the vim-fugitive
+" plugin.
 
-autocmd FileType gitcommit DiffGitCached |
-    \ wincmd L | wincmd h |
-    \ let g:neocomplete#enable_auto_close_preview = 0 |
-    \ let g:neocomplete#disable_auto_complete = 1
+
+function s:open_diff_window()
+    if bufnr('') == 1
+        execute 'DiffGitCached | wincmd L | wincmd h'
+    endif
+endfunction
+
+au BufRead COMMIT_EDITMSG call s:open_diff_window()
