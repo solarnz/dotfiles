@@ -1,12 +1,19 @@
 filetype off
 
-" Setup NeoBundle - The hard way, without using submodules!
+" Setup NeoBundle settings
+let g:neobundle#enable_tail_path = 1
+let g:neobundle#types#git#default_protocol = 'git'
+let g:neobundle#install_process_timeout = 480
+
+" Install the bundles after we have installed neo bundle
+let s:install_neo_bundles = 0
+
+let s:neobundle_dir = expand('~/.vim/bundle')
+
+" Install NeoBundle - The hard way, without using submodules!
 if has('vim_starting')
-    " Install the bundles after we have installed neo bundle
-    let s:install_neo_bundles = 0
 
     " Clone and or Load NeoBundle
-    let s:neobundle_dir = expand('~/.vim/bundle')
     if isdirectory('neobundle.vim')
         set runtimepath^=neobundle.vim
     elseif finddir('neobundle.vim', '.;') != ''
@@ -22,11 +29,9 @@ if has('vim_starting')
         execute 'set runtimepath^=' . s:neobundle_dir.'/neobundle.vim'
     endif
 
-    let g:neobundle#enable_tail_path = 1
-    let g:neobundle#types#git#default_protocol = 'git'
-    let g:neobundle#install_process_timeout = 480
-    call neobundle#rc(s:neobundle_dir)
 endif
+
+call neobundle#begin(s:neobundle_dir)
 
 " Allow NeoBundle to update itself O.o
 NeoBundleFetch 'Shougo/neobundle.vim'
@@ -109,6 +114,8 @@ NeoBundle 'hynek/vim-python-pep8-indent' " Better python indentation support
 NeoBundle 'solarnz/python.vim' " Python syntax highlighting
 NeoBundle 'PotatoesMaster/i3-vim-syntax' " i3 configuration highlighting
 NeoBundle 'solarnz/nagios.vim' " Nagios syntax highlighting
+
+call neobundle#end()
 
 if has('vim_starting') && s:install_neo_bundles == 1
     NeoBundleInstall
