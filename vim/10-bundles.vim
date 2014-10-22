@@ -94,6 +94,7 @@ NeoBundle 'marijnh/tern_for_vim', {
             \}
 NeoBundle 'editorconfig/editorconfig-vim' " Editor agnostic project settings
 NeoBundle 'solarnz/whitespace.vim' " Remove trailing whitespace when saving
+NeoBundle 'solarnz/committia.vim' " Show a differential when doing git commit
 
 " Theme / Looks
 let g:solarnz_will_load_lightline = 1
