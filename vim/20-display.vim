@@ -14,7 +14,8 @@ set showmatch
 set matchpairs=(:),{:},[:],<:>
 
 "Show line numbers
-set nu
+set number
+set relativenumber
 
 "Extra highlighting settings
 au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
