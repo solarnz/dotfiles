@@ -116,6 +116,7 @@ NeoBundle 'solarnz/python.vim' " Python syntax highlighting
 NeoBundle 'PotatoesMaster/i3-vim-syntax' " i3 configuration highlighting
 NeoBundle 'solarnz/nagios.vim' " Nagios syntax highlighting
 NeoBundle 'kchmck/vim-coffee-script' " Coffee script language support
+NeoBundle 'wting/rust.vim' " Rust language support
 
 call neobundle#end()
 
