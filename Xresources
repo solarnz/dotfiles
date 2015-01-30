@@ -55,3 +55,4 @@ URxvt*loginShell: true
 URxvt*termName: xterm-256color
 URxvt.font: xft:Droid Sans Mono:size=9
 URxvt.scrollBar: false
+URxvt.savelines: 65535
