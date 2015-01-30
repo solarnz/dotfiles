@@ -6,22 +6,23 @@ prompt_gentoo_setup () {
     prompt_gentoo_user=${2:-'green'}
     prompt_gentoo_root=${3:-'red'}
 
-    if [ "$USER" = 'root' ]
-        then
+    if [ "$USER" = 'root' ]; then
         base_prompt="%B%F{$prompt_gentoo_root}%m%k "
-        else
-            base_prompt="%B%F{$prompt_gentoo_user}%n@%m%k "
-            fi
-            post_prompt="%b%f%k"
+    else
+        base_prompt="%B%F{$prompt_gentoo_user}%n@%m%k "
+    fi
 
-#setopt noxtrace localoptions
+    post_prompt="%b%f%k"
 
-setopt promptsubst
+    #setopt noxtrace localoptions
 
-path_prompt="%B%F{$prompt_gentoo_prompt}%2~"
-PS1="$base_prompt$path_prompt %(1j.(%j).)%# $post_prompt"
-PS2="$base_prompt$path_prompt %_> $post_prompt"
-PS3="$base_prompt$path_prompt ?# $post_prompt"
+    setopt promptsubst
+
+    path_prompt="%B%F{$prompt_gentoo_prompt}%2~"
+    PS1="$base_prompt$path_prompt %(1j.(%j).)%# $post_prompt"
+    PS2="$base_prompt$path_prompt %_> $post_prompt"
+    PS3="$base_prompt$path_prompt ?# $post_prompt"
+
 }
 
 function git_current_branch() {
