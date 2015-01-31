@@ -1,24 +1,24 @@
 Xcursor.size:  16       !  32, 48 or 64 may also be good values
 
-! Base16 Bright
+! Base16 Solarnz
 ! Scheme: Chris Kempson (http://chriskempson.com)
 
-#define base00 #000000
-#define base01 #303030
-#define base02 #505050
-#define base03 #b0b0b0
-#define base04 #d0d0d0
-#define base05 #e0e0e0
-#define base06 #f5f5f5
-#define base07 #ffffff
-#define base08 #fb0120
-#define base09 #fc6d24
-#define base0A #fda331
-#define base0B #a1c659
-#define base0C #76c7b7
-#define base0D #6fb3d2
-#define base0E #d381c3
-#define base0F #be643c
+#define base00 #151515
+#define base01 #202020
+#define base02 #303030
+#define base03 #808080
+#define base04 #b0b0b0
+#define base05 #d0d0d0
+#define base06 #e0e0e0
+#define base07 #f5f5f5
+#define base08 #fb9fb1
+#define base09 #eda987
+#define base0A #ddb26f
+#define base0B #acc267
+#define base0C #12cfc0
+#define base0D #6fc2ef
+#define base0E #e1a3ee
+#define base0F #deaf8f
 
 *.foreground:   base05
 *.background:   base00
