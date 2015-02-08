@@ -51,16 +51,19 @@ Xcursor.size:  16       !  32, 48 or 64 may also be good values
 *.color20:      base04
 *.color21:      base06
 
-URxvt*loginShell: true
-URxvt*termName: xterm-256color
-URxvt.font: xft:Droid Sans Mono:size=9
-URxvt.scrollBar: false
-URxvt.savelines: 65535
+URxvt*loginShell:      true
+URxvt*termName:        xterm-256color
+URxvt.font:            xft:Droid Sans Mono:size=9
+URxvt.scrollBar:       false
+URxvt.savelines:       65535
 
 ! Disable the annoying yellow box when you go 'Control+Shift'
-URxvt.iso14755 : false
-URxvt.iso14755_52: false
+URxvt.iso14755:        false
+URxvt.iso14755_52:     false
 
-URxvt.perl-ext-common:  default,clipboard
-URxvt.keysym.C-C:   perl:clipboard:copy
-URxvt.keysym.C-V:   perl:clipboard:paste
+URxvt.perl-ext-common: default,clipboard,font-size
+
+URxvt.keysym.C-C:      perl:clipboard:copy
+URxvt.keysym.C-V:      perl:clipboard:paste
+URxvt.keysym.C-Up:     perl:font-size:increase
+URxvt.keysym.C-Down:   perl:font-size:decrease
