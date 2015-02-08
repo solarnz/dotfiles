@@ -25,23 +25,25 @@ prompt_gentoo_setup () {
 
 }
 
-function git_current_branch() {
-  ref=$(git symbolic-ref HEAD 2> /dev/null) || \
-  ref=$(git rev-parse --short HEAD 2> /dev/null) || return
-  echo \(${ref#refs/heads/}\)
-}
-
-function git_dirty_status() {
-    if command git diff-index --quiet HEAD 2> /dev/null; then
-        echo "%{$fg[green]%}"
-    else
-        echo "%{$fg[red]%}"
-    fi
-}
-
 prompt_gentoo_setup "$@"
-setopt promptsubst
-export RPROMPT=$'%B$(git_dirty_status)$(git_current_branch)%b%{$reset_color%}'
 
+setopt promptsubst
+
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' actionformats \
+    '%F{blue}[%b(%a)%F{blue}]%f '
+zstyle ':vcs_info:*' formats       \
+    '%F{blue}[%b%F{blue}]%f '
+
+zstyle ':vcs_info:*' enable git
+
+# or use pre_cmd, see man zshcontrib
+vcs_info_wrapper() {
+  vcs_info
+  if [ -n "$vcs_info_msg_0_" ]; then
+    echo "%{%B%}${vcs_info_msg_0_}%{$reset_color%}$del"
+  fi
+}
+RPROMPT=$'$(vcs_info_wrapper)'
 
 # vim:ft=zsh
