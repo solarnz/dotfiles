@@ -52,7 +52,7 @@ Xcursor.size:  16       !  32, 48 or 64 may also be good values
 *.color21:      base06
 
 URxvt*loginShell:      true
-URxvt*termName:        xterm-256color
+URxvt*termName:        rxvt-unicode-256color
 URxvt.font:            xft:Droid Sans Mono:size=9
 URxvt.scrollBar:       false
 URxvt.savelines:       65535
