@@ -222,3 +222,4 @@ exec ~/.i3/local.sh
 exec --no-startup-id xmodmap ~/.Xmodmap
 exec --no-startup-id redshift-gtk -c ~/.config/redshift
 exec systemctl --user start mystuff.target
+exec xrdb ~/.Xresources
