@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [[ ! -e $HOME/.nvm ]]; then
+    git clone https://github.com/creationix/nvm $HOME/.nvm
+    cd $HOME/.nvm
+    git checkout `git describe --abbrev=0 --tags`
+fi
