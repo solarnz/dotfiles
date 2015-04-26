@@ -17,7 +17,7 @@ short_units yes
 # How strict should if_up be when testing an interface for being up?
 # The value is one of up, link or address, to check for the interface
 # being solely up, being up and having link or being up, having link
-# and an assigned IP address. 
+# and an assigned IP address.
 if_up_strictness address
 
 # Add spaces to keep things from moving about?  This only affects certain objects.
@@ -49,51 +49,23 @@ TEXT
     "color": ${if_match ${Cpu}<75}"\#ffffff"${else}"\#ff0000"${endif}
   },
   { "full_text": "Disk: ${diskio}" },
-  ${if_existing /home/chris/.i3/full_battery}
-    {
-        "full_text": "Bat0 ${battery BAT0} ${battery_time BAT0}",
-        "color": ${if_match ${battery_percent BAT0}>25}"\#ffffff"${else}"\#ff0000"${endif},
-        "name": "battery"
-    },
-    {
-        "full_text": "Bat1 ${battery BAT1} ${battery_time BAT1}",
-        "color": ${if_match ${battery_percent BAT1}>10}"\#ffffff"${else}"\#ff0000"${endif},
-        "name": "battery"
-    },
-  ${else}
-    {
-        "full_text": "Bat0 ${battery_percent BAT0}%",
-        "color": ${if_match ${battery_percent BAT0}>25}"\#ffffff"${else}"\#ff0000"${endif},
-        "name": "battery"
-    },
-    {
-        "full_text": "Bat1 ${battery_percent BAT1}%",
-        "color": ${if_match ${battery_percent BAT1}>10}"\#ffffff"${else}"\#ff0000"${endif},
-        "name": "battery"
-    },
+  {
+      "full_text": "Bat0 ${battery BAT0} ${battery_time BAT0}",
+      "color": ${if_match ${battery_percent BAT0}>25}"\#ffffff"${else}"\#ff0000"${endif},
+      "name": "battery"
+  },
+  {
+      "full_text": "Bat1 ${battery BAT1} ${battery_time BAT1}",
+      "color": ${if_match ${battery_percent BAT1}>10}"\#ffffff"${else}"\#ff0000"${endif},
+      "name": "battery"
+  },
+  ${if_up wl0}
+      { "full_text": "wl0: ${wireless_essid wl0} ${wireless_bitrate wl0} ${addr wl0}: ${downspeed wl0}/${upspeed wl0}", "color": "\#00ff00", "name": "network"},
   ${endif}
-  ${if_existing /home/chris/.i3/detailed_network}
-    ${if_up wl0}
-        { "full_text": "wl0: ${wireless_essid wl0} ${wireless_bitrate wl0} ${addr wl0}: ${downspeed wl0}/${upspeed wl0}", "color": "\#00ff00", "name": "network"},
-    ${endif}
-    ${if_up en0}
-        { "full_text": "en0: ${addr en0}: ${downspeed en0}/${upspeed en0}", "color": "\#00ff00", "name": "network"},
-    ${endif}
-  ${else}
-    ${if_up wl0}
-        { "full_text": "wl0: ${wireless_essid wl0}", "color": "\#00ff00", "name": "network"},
-    ${endif}
-    ${if_up en0}
-        { "full_text": "en0", "color": "\#00ff00", "name": "network"},
-    ${endif}
+  ${if_up en0}
+      { "full_text": "en0: ${addr en0}: ${downspeed en0}/${upspeed en0}", "color": "\#00ff00", "name": "network"},
   ${endif}
-  ${if_existing /home/chris/.i3/full_time}
-    { "full_text": "NY: ${tztime America/New_York %H:%M:%S}", "color": "\#00ffff", "name": "time"},
-    { "full_text": "LA: ${tztime America/Los_Angeles %H:%M:%S}", "color": "\#00ffff", "name": "time"},
-    { "full_text": "NZ: ${tztime Pacific/Auckland %H:%M:%S}", "color": "\#00ffff", "name": "time"},
-    { "full_text": "SYD: ${time %a %Y-%m-%d %H:%M:%S}", "color": "\#00ffff", "name": "time"}
-  ${else}
-    { "full_text": "LA: ${tztime America/Los_Angeles %H:%M:%S}", "color": "\#00ffff", "name": "time"},
-    { "full_text": "SYD: ${time %a %Y-%m-%d %H:%M:%S}", "color": "\#00ffff", "name": "time"}
-  ${endif}
+  { "full_text": "LA: ${tztime America/Los_Angeles %H:%M:%S}", "color": "\#00ffff", "name": "time"},
+  { "full_text": "NY: ${tztime America/New_York %H:%M:%S}", "color": "\#00ffff", "name": "time"},
+  { "full_text": "SYD: ${time %a %Y-%m-%d %H:%M:%S}", "color": "\#00ffff", "name": "time"}
 ]
