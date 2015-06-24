@@ -97,6 +97,11 @@ NeoBundle 'solarnz/whitespace.vim' " Remove trailing whitespace when saving
 NeoBundle 'solarnz/committia.vim' " Show a differential when doing git commit
 NeoBundle 'junegunn/vim-peekaboo' " Show register values
 NeoBundle 'chrisbra/vim-diff-enhanced' " Better differential algorithms
+NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'mattn/webapi-vim'
+NeoBundle 'mattn/gist-vim'
+NeoBundle 'embear/vim-localvimrc'
+NeoBundle 'rstacruz/vim-closer'
 
 " Theme / Looks
 let g:solarnz_will_load_lightline = 1
@@ -117,9 +122,11 @@ NeoBundle 'hynek/vim-python-pep8-indent' " Better python indentation support
 NeoBundle 'solarnz/python.vim' " Python syntax highlighting
 NeoBundle 'PotatoesMaster/i3-vim-syntax' " i3 configuration highlighting
 NeoBundle 'solarnz/nagios.vim' " Nagios syntax highlighting
+NeoBundle 'markcornick/vim-terraform'
 NeoBundle 'kchmck/vim-coffee-script' " Coffee script language support
 NeoBundle 'wting/rust.vim' " Rust language support
 NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'shime/vim-livedown'
 
 call neobundle#end()
 
