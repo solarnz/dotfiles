@@ -223,3 +223,6 @@ exec --no-startup-id xmodmap ~/.Xmodmap
 exec --no-startup-id redshift-gtk -c ~/.config/redshift
 exec systemctl --user start mystuff.target
 exec xrdb ~/.Xresources
+
+for_window [instance="floating_xfce4-terminal"] floating enable, border 1pixel
+for_window [class="^Google-chrome.*$" instance="^crx_gaedmjdfmmahhbjefcbgaolhhanlaolb$"] floating enable
