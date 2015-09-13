@@ -112,7 +112,7 @@ NeoBundle 'junegunn/goyo.vim' " Distraction free editing
 NeoBundle 'solarnz/thrift.vim' " Thrift language support
 NeoBundle 'pangloss/vim-javascript' " Javascript language support
 NeoBundle 'othree/html5.vim'
-NeoBundle 'jnwhiteh/vim-golang' " Golang language support
+NeoBundle 'fatih/vim-go' " Golang language support
 NeoBundle "groenewege/vim-less" " Less language support
 NeoBundle "hail2u/vim-css3-syntax" " Css language support
 NeoBundle "rodjek/vim-puppet" " Puppet language support
