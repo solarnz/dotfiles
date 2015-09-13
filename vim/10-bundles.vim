@@ -101,7 +101,6 @@ NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'mattn/webapi-vim'
 NeoBundle 'mattn/gist-vim'
 NeoBundle 'embear/vim-localvimrc'
-NeoBundle 'rstacruz/vim-closer'
 
 " Theme / Looks
 let g:solarnz_will_load_lightline = 1
