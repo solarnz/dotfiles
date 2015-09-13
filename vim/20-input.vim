@@ -59,6 +59,8 @@ vnoremap   <Right>  <NOP>
 inoremap jj <esc>
 inoremap jk <esc>
 
+nnoremap fd :write <CR>
+
 noremap      <F1>    <ESC>
 inoremap     <F1>    <ESC>
 vnoremap     <F1>    <ESC>
