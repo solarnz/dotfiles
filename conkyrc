@@ -67,5 +67,5 @@ TEXT
   ${endif}
   { "full_text": "LA: ${tztime America/Los_Angeles %H:%M:%S}", "color": "\#00ffff", "name": "time"},
   { "full_text": "NY: ${tztime America/New_York %H:%M:%S}", "color": "\#00ffff", "name": "time"},
-  { "full_text": "SYD: ${time %a %Y-%m-%d %H:%M:%S}", "color": "\#00ffff", "name": "time"}
+  { "full_text": "SYD: ${tztime Australia/Sydney %a %Y-%m-%d %H:%M:%S}", "color": "\#00ffff", "name": "time"}
 ]
