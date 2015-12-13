@@ -215,7 +215,7 @@ bar {
 }
 
 # Assign any windows from the hangouts extension in chrome to the "11: chats" workspace
-assign [class="^Google-chrome.*$" instance="^crx_nckgahadagoaajjgafhacjanaoiihapd$"] 11: chats
+assign [class="^google-chrome.*$" instance="^crx_nckgahadagoaajjgafhacjanaoiihapd$"] 11: chats
 
 # Start misc programs / scripts
 exec xfce4-clipman
