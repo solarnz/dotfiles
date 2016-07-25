@@ -35,18 +35,6 @@ call neobundle#begin(s:neobundle_dir)
 " Allow NeoBundle to update itself O.o
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-" Command-T is my favorite file finder. Unfortunately it requires vim to be
-" built with ruby support, so if that is not enabled, there is no point
-" installing the plugin.
-if has('ruby')
-    NeoBundle 'wincent/Command-T', {
-    \   'build': {
-    \       'mac': 'rake make',
-    \       'unix': 'rake make'
-    \   }
-    \}
-endif
-
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'matze/vim-move' " Visually move text around.
 NeoBundle 'mbbill/undotree' " Shows the vim undo tree in a window.
@@ -100,6 +88,9 @@ NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'mattn/webapi-vim'
 NeoBundle 'mattn/gist-vim'
 NeoBundle 'embear/vim-localvimrc'
+
+NeoBundle 'junegunn/fzf'
+NeoBundle 'junegunn/fzf.vim'
 
 " Theme / Looks
 let g:solarnz_will_load_lightline = 1
