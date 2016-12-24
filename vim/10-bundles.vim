@@ -38,7 +38,6 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'matze/vim-move' " Visually move text around.
 NeoBundle 'mbbill/undotree' " Shows the vim undo tree in a window.
-NeoBundle 'rking/ag.vim' " Integrate ag with vim.
 NeoBundle 'solarnz/nerdcommenter' " Easier commenting and uncommenting.
 " The almighty unite.vim plugin.
 NeoBundle 'Shougo/unite.vim', {'depends': [ 'Shougo/vimproc.vim' ]}
