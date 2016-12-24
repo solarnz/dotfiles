@@ -28,6 +28,7 @@ nnoremap <Leader>q :q <CR>
 nnoremap <Leader>Q :wq<CR>
 nnoremap <C-W>t :tabnew <CR>
 nnoremap <Leader><Backspace> :undo <CR>
+nnoremap <Leader>b :Buffers<CR>
 
 nnoremap ` :
 
