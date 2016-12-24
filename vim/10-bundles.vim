@@ -75,23 +75,22 @@ NeoBundle 'chriskempson/base16-vim' " The base16 color scheme for vim
 NeoBundle 'junegunn/goyo.vim' " Distraction free editing
 
 " Language plugins
-NeoBundle 'solarnz/thrift.vim' " Thrift language support
-NeoBundle 'pangloss/vim-javascript' " Javascript language support
-NeoBundle 'othree/html5.vim'
-NeoBundle 'fatih/vim-go' " Golang language support
 NeoBundle "groenewege/vim-less" " Less language support
 NeoBundle "hail2u/vim-css3-syntax" " Css language support
 NeoBundle "rodjek/vim-puppet" " Puppet language support
-NeoBundle "saltstack/salt-vim" " Salt language suport
-NeoBundle 'hynek/vim-python-pep8-indent' " Better python indentation support
-NeoBundle 'solarnz/python.vim' " Python syntax highlighting
 NeoBundle 'PotatoesMaster/i3-vim-syntax' " i3 configuration highlighting
-NeoBundle 'solarnz/nagios.vim' " Nagios syntax highlighting
-NeoBundle 'markcornick/vim-terraform'
+NeoBundle 'fatih/vim-go' " Golang language support
+NeoBundle 'hynek/vim-python-pep8-indent' " Better python indentation support
 NeoBundle 'kchmck/vim-coffee-script' " Coffee script language support
-NeoBundle 'wting/rust.vim' " Rust language support
-NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'markcornick/vim-terraform'
+NeoBundle 'othree/html5.vim'
+NeoBundle 'pangloss/vim-javascript' " Javascript language support
 NeoBundle 'shime/vim-livedown'
+NeoBundle 'solarnz/nagios.vim' " Nagios syntax highlighting
+NeoBundle 'solarnz/python.vim' " Python syntax highlighting
+NeoBundle 'solarnz/thrift.vim' " Thrift language support
+NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'wting/rust.vim' " Rust language support
 
 call neobundle#end()
 
