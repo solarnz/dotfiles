@@ -39,15 +39,6 @@ NeoBundle 'godlygeek/tabular'
 NeoBundle 'matze/vim-move' " Visually move text around.
 NeoBundle 'mbbill/undotree' " Shows the vim undo tree in a window.
 NeoBundle 'solarnz/nerdcommenter' " Easier commenting and uncommenting.
-" The almighty unite.vim plugin.
-NeoBundle 'Shougo/unite.vim', {'depends': [ 'Shougo/vimproc.vim' ]}
-" Allows for running processes asynchronously.
-NeoBundle 'Shougo/vimproc.vim', {
-            \     'build': {
-            \        'mac': 'make',
-            \        'unix': 'make'
-            \    }
-            \}
 " Easy replacement for areas of text. Quicker than writing a regular
 " expression.
 NeoBundle 'kristijanhusak/vim-multiple-cursors'
@@ -73,10 +64,6 @@ NeoBundle 'solarnz/whitespace.vim' " Remove trailing whitespace when saving
 NeoBundle 'solarnz/committia.vim' " Show a differential when doing git commit
 NeoBundle 'junegunn/vim-peekaboo' " Show register values
 NeoBundle 'chrisbra/vim-diff-enhanced' " Better differential algorithms
-NeoBundle 'ctrlpvim/ctrlp.vim'
-NeoBundle 'mattn/webapi-vim'
-NeoBundle 'mattn/gist-vim'
-NeoBundle 'embear/vim-localvimrc'
 
 NeoBundle 'junegunn/fzf'
 NeoBundle 'junegunn/fzf.vim'
