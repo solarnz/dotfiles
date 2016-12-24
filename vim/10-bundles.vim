@@ -69,13 +69,6 @@ NeoBundle 'Valloric/YouCompleteMe', {
             \       'mac': './install.sh'
             \   }
             \}
-" Improved autocomplete functionality for javascript
-NeoBundle 'marijnh/tern_for_vim', {
-            \   'build': {
-            \       'unix': 'npm install',
-            \       'mac': 'npm install'
-            \   }
-            \}
 NeoBundle 'editorconfig/editorconfig-vim' " Editor agnostic project settings
 NeoBundle 'solarnz/whitespace.vim' " Remove trailing whitespace when saving
 NeoBundle 'solarnz/committia.vim' " Show a differential when doing git commit
