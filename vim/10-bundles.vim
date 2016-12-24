@@ -42,9 +42,6 @@ NeoBundle 'rking/ag.vim' " Integrate ag with vim.
 NeoBundle 'solarnz/nerdcommenter' " Easier commenting and uncommenting.
 " The almighty unite.vim plugin.
 NeoBundle 'Shougo/unite.vim', {'depends': [ 'Shougo/vimproc.vim' ]}
-" My fork of the unite-outline plugin. I added support for the thrift
-" language.
-NeoBundle 'solarnz/unite-outline'
 " Allows for running processes asynchronously.
 NeoBundle 'Shougo/vimproc.vim', {
             \     'build': {
