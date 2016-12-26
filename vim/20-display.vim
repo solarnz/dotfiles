@@ -37,3 +37,7 @@ set list lcs=trail:·,tab:»·
 
 let &t_SI = "\e]50;CursorShape=1\x7"
 let &t_EI = "\e]50;CursorShape=0\x7"
+
+if has('nvim')
+    set inccommand=split
+endif
