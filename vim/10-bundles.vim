@@ -59,6 +59,7 @@ call dein#add('solarnz/whitespace.vim') " Remove trailing whitespace when saving
 call dein#add('solarnz/committia.vim') " Show a differential when doing git commit
 call dein#add('junegunn/vim-peekaboo') " Show register values
 call dein#add('chrisbra/vim-diff-enhanced') " Better differential algorithms
+call dein#add('vimwiki/vimwiki')
 
 call dein#add('junegunn/fzf')
 call dein#add('junegunn/fzf.vim')
