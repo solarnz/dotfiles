@@ -68,3 +68,9 @@ vnoremap     <F1>    <ESC>
 nnoremap     <F1>    <ESC>
 
 noremap <Leader>m :noh <CR>
+
+" Disable the mouse in neovim (for what ever reason it is enabled by default
+" :-/
+if has('nvim')
+    set mouse=""
+endif
