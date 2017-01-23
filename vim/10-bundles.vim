@@ -7,7 +7,11 @@ endif
 " Install the bundles after we have installed neo bundle
 let s:install_plugins = 0
 
-let s:plugin_dir = expand('~/.vim/bundle')
+if has('nvim')
+    let s:plugin_dir = expand('~/.vim/nvim_bundles')
+else
+    let s:plugin_dir = expand('~/.vim/vim_bundles')
+endif
 
 " Install dein.vim - The hard way, without using submodules!
 if has('vim_starting')
