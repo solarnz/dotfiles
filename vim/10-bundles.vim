@@ -56,8 +56,7 @@ call dein#add('zhaocai/DirDiff.vim') " Allows you to diff directories
 call dein#add('junegunn/vim-easy-align') " A simple Vim alignment plugin
 call dein#add('scrooloose/syntastic') " Runs linters over your code
 call dein#add('solarnz/arcanist.vim') " Arcanist syntax highlighting
-" Awesome autocomplete functionality
-call dein#add('Valloric/YouCompleteMe')
+call dein#add('Shougo/deoplete.nvim')
 call dein#add('editorconfig/editorconfig-vim') " Editor agnostic project settings
 call dein#add('solarnz/whitespace.vim') " Remove trailing whitespace when saving
 call dein#add('solarnz/committia.vim') " Show a differential when doing git commit
