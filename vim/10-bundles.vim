@@ -84,6 +84,7 @@ call dein#add('kchmck/vim-coffee-script') " Coffee script language support
 call dein#add('markcornick/vim-terraform')
 call dein#add('othree/html5.vim')
 call dein#add('pangloss/vim-javascript') " Javascript language support
+call dein#add('mxw/vim-jsx')
 call dein#add('shime/vim-livedown')
 call dein#add('solarnz/nagios.vim') " Nagios syntax highlighting
 call dein#add('solarnz/python.vim') " Python syntax highlighting
