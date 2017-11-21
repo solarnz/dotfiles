@@ -74,3 +74,8 @@ noremap <Leader>m :noh <CR>
 if has('nvim')
     set mouse=""
 endif
+
+if has('nvim')
+    " Double tap escape in a neovim terminal to escape back to normal mode
+    tnoremap <Esc><Esc> <C-\><C-n>
+endif
