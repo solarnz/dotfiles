@@ -1,6 +1,6 @@
 # Maintainer: Andy Kluger <AndyKluger@gmail.com>
 # Contributor: Markus Weimar <mail@markusweimar.de>
-pkgname=ttf-iosevka-custom-git
+pkgname=ttf-iosevka-solarnz-git
 pkgver=r1107.364c8ae
 pkgrel=1
 pkgdesc='A slender monospace sans-serif and slab-serif typeface inspired by Pragmata Pro, M+ and PF DIN Mono.'
@@ -9,7 +9,7 @@ url='https://be5invis.github.io/Iosevka/'
 license=('custom:OFL')
 makedepends=('git' 'nodejs' 'npm' 'ttfautohint' 'otfcc')
 depends=('fontconfig' 'xorg-font-utils')
-conflicts=()
+conflicts=('ttf-iosevka-custom-git')
 provides=()
 source=("git+https://github.com/be5invis/Iosevka")
 md5sums=('SKIP')
@@ -23,7 +23,7 @@ build() {
   : ${IOSEVKA_DESIGN='v-tilde-low v-asterisk-low v-l-tailed v-zero-slashed v-at-short term'}
   cd Iosevka
   npm install
-  make custom-config design="$IOSEVKA_DESIGN" family='Iosevka Custom'
+  make custom-config design="$IOSEVKA_DESIGN" family='Iosevka Solarnz'
   make custom
 }
 
