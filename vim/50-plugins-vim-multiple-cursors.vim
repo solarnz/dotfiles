@@ -1,13 +1,9 @@
 " Disable YouCompleteMe when using vim-multiple-cursors
 "
 function! Multiple_cursors_before()
-    if exists('*youcompleteme#EnableCursorMovedAutocommands')
-        call youcompleteme#DisableCursorMovedAutocommands()
-    endif
+    let b:deoplete_disable_auto_complete = 1
 endfunction
 
 function! Multiple_cursors_after()
-    if exists('*youcompleteme#EnableCursorMovedAutocommands')
-        call youcompleteme#EnableCursorMovedAutocommands()
-    endif
+    let b:deoplete_disable_auto_complete = 0
 endfunction
