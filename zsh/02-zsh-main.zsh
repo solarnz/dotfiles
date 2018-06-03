@@ -13,7 +13,7 @@ colors
 
 export PATH="$HOME/.local/bin:$PATH"
 
-export EDITOR=vim
+export EDITOR=nvim
 
 autoload -U autocd
 setopt autocd
