@@ -67,6 +67,10 @@ call dein#add('tpope/vim-surround')
 call dein#add('junegunn/fzf', {'merged': 0})
 call dein#add('junegunn/fzf.vim')
 
+call dein#add('autozimu/LanguageClient-neovim', {
+    \ 'build': './install.sh',
+    \ })
+
 " Theme / Looks
 let g:solarnz_will_load_lightline = 1
 call dein#add('itchyny/lightline.vim') " The best statusbar plugin.
