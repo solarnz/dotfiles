@@ -1,5 +1,6 @@
 if [[ $SSH_CONNECTION == "" ]]; then
-    eval `keychain --eval keychain $(ls ~/.ssh | grep -v -e pub -e authorized_keys -e known_hosts -e config) `
+    eval `keychain --eval --agents gpg`
+    export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 fi
 
 # vim:ft=zsh
