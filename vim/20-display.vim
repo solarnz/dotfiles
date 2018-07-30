@@ -5,6 +5,9 @@ try
     let base16colorspace=256          " Enable base16 256 colorspace
     colorscheme base16-default-dark
     highlight SpellBad ctermbg=0
+    highlight SpellCap ctermbg=0
+    highlight SpellRare ctermbg=0
+    highlight SpellLocal ctermbg=0
 catch /^Vim\%((\a\+)\)\=:E185/
     " Well, not much I can do at the moment
 endtry
