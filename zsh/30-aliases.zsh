@@ -5,4 +5,8 @@ alias sl="ls"
 
 alias ls="ls --color"
 
+if [[ -e "$(which exa)" ]]; then
+    alias ls="exa"
+fi
+
 alias nose="nosetests --with-yanc --with-watcher"
