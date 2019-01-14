@@ -63,6 +63,8 @@ call dein#add('junegunn/vim-peekaboo') " Show register values
 call dein#add('chrisbra/vim-diff-enhanced') " Better differential algorithms
 call dein#add('vimwiki/vimwiki')
 call dein#add('tpope/vim-surround')
+call dein#add('baverman/vial')
+call dein#add('baverman/vial-http')
 
 call dein#add('junegunn/fzf', {'merged': 0})
 call dein#add('junegunn/fzf.vim')
