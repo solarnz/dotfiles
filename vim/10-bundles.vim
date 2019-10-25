@@ -51,26 +51,32 @@ call dein#add('tpope/vim-fugitive') " Git integration
 call dein#add('tpope/vim-git') " Git syntax highlighting
 call dein#add('tpope/vim-obsession') " Better session saving support
 call dein#add('tpope/vim-speeddating') " Increments dates correctly
-call dein#add('tpope/vim-vinegar') " Improves netrw
+call dein#add('tpope/vim-surround')
 call dein#add('zhaocai/DirDiff.vim') " Allows you to diff directories
 call dein#add('junegunn/vim-easy-align') " A simple Vim alignment plugin
 call dein#add('solarnz/arcanist.vim') " Arcanist syntax highlighting
-call dein#add('Shougo/deoplete.nvim')
+call dein#add('roxma/nvim-yarp')
+call dein#add('ncm2/ncm2')
+call dein#add('ncm2/float-preview.nvim')
 call dein#add('editorconfig/editorconfig-vim') " Editor agnostic project settings
 call dein#add('solarnz/whitespace.vim') " Remove trailing whitespace when saving
 call dein#add('solarnz/committia.vim') " Show a differential when doing git commit
 call dein#add('junegunn/vim-peekaboo') " Show register values
 call dein#add('chrisbra/vim-diff-enhanced') " Better differential algorithms
 call dein#add('vimwiki/vimwiki')
+call dein#add('tpope/vim-vinegar') " Improves netrw
 call dein#add('tpope/vim-surround')
+call dein#add('neomake/neomake')
 call dein#add('baverman/vial')
 call dein#add('baverman/vial-http')
+call dein#add('leafgarland/typescript-vim')
 
 call dein#add('junegunn/fzf', {'merged': 0})
 call dein#add('junegunn/fzf.vim')
 
 call dein#add('autozimu/LanguageClient-neovim', {
-    \ 'build': './install.sh',
+    \  'branch': 'next',
+    \ 'build': 'bash install.sh',
     \ })
 
 " Theme / Looks
@@ -97,6 +103,8 @@ call dein#add('solarnz/python.vim') " Python syntax highlighting
 call dein#add('solarnz/thrift.vim') " Thrift language support
 call dein#add('vim-ruby/vim-ruby')
 call dein#add('wting/rust.vim') " Rust language support
+
+call dein#add('tpope/vim-dadbod')
 
 call dein#end()
 
