@@ -29,6 +29,7 @@ nnoremap <Leader>Q :wq<CR>
 nnoremap <C-W>t :tabnew <CR>
 nnoremap <Leader><Backspace> :undo <CR>
 nnoremap <Leader>b :Buffers<CR>
+nnoremap <Leader>e :Explore<CR>
 
 nnoremap ` :
 
