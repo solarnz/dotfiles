@@ -55,9 +55,7 @@ call dein#add('tpope/vim-surround')
 call dein#add('zhaocai/DirDiff.vim') " Allows you to diff directories
 call dein#add('junegunn/vim-easy-align') " A simple Vim alignment plugin
 call dein#add('solarnz/arcanist.vim') " Arcanist syntax highlighting
-call dein#add('roxma/nvim-yarp')
-call dein#add('ncm2/ncm2')
-call dein#add('ncm2/float-preview.nvim')
+call dein#add('Shougo/deoplete.nvim')
 call dein#add('editorconfig/editorconfig-vim') " Editor agnostic project settings
 call dein#add('solarnz/whitespace.vim') " Remove trailing whitespace when saving
 call dein#add('solarnz/committia.vim') " Show a differential when doing git commit
