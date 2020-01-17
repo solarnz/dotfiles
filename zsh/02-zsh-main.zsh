@@ -19,3 +19,8 @@ autoload -U autocd
 setopt autocd
 setopt extendedglob
 zstyle ':completion:*' menu select
+
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey "^X^E" edit-command-line
+bindkey "^V" edit-command-line
