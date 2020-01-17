@@ -71,6 +71,7 @@ call dein#add('leafgarland/typescript-vim')
 
 call dein#add('junegunn/fzf', {'merged': 0})
 call dein#add('junegunn/fzf.vim')
+call dein#add('mileszs/ack.vim')
 
 call dein#add('autozimu/LanguageClient-neovim', {
     \  'branch': 'next',
