@@ -21,3 +21,5 @@ vnoremap <F5> :call LanguageClient_contextMenu()<CR>
 
 nnoremap tg :call LanguageClient_contextMenu()<CR>
 vnoremap tg :call LanguageClient_contextMenu()<CR>
+
+let g:deoplete#enable_at_startup = 1

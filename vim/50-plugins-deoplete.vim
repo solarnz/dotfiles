@@ -1,1 +1,1 @@
-set completeopt=menu,noinsert
+set completeopt=menuone,noselect,noinsert
