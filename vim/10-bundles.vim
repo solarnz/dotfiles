@@ -68,6 +68,7 @@ call dein#add('neomake/neomake')
 call dein#add('baverman/vial')
 call dein#add('baverman/vial-http')
 call dein#add('leafgarland/typescript-vim')
+call dein#add('peitalin/vim-jsx-typescript')
 
 call dein#add('junegunn/fzf', {'merged': 0})
 call dein#add('junegunn/fzf.vim')
