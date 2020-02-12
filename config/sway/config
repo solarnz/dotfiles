@@ -134,8 +134,8 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-# Locks the workstation
-bindsym $mod+Delete exec "xautolock -enable && xautolock -locknow"
+bindsym $mod+p exec "clipman pick"
+bindsym $mod+Shift+p exec "clipman pick --histpath='~/.local/share/clipman-primary.json'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -188,7 +188,7 @@ bar {
 exec systemctl --user start mystuff.target
 exec xrdb ~/.Xresources
 exec wl-paste -t text --watch clipman store
-exec wl-paste -p -t text --watch clipman store --histpath="~/.local/share/clipman-primary.json
+exec wl-paste -p -t text --watch clipman store --histpath="~/.local/share/clipman-primary.json"
 
 for_window [instance="floating_xfce4-terminal"] floating enable, border 1pixel
 for_window [class="^Google-chrome.*$" instance="^crx_gaedmjdfmmahhbjefcbgaolhhanlaolb$"] floating enable
