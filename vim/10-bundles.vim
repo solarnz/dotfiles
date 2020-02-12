@@ -65,8 +65,8 @@ call dein#add('vimwiki/vimwiki')
 call dein#add('tpope/vim-vinegar') " Improves netrw
 call dein#add('tpope/vim-surround')
 call dein#add('neomake/neomake')
-call dein#add('baverman/vial')
-call dein#add('baverman/vial-http')
+call dein#add('solarnz/vial')
+call dein#add('solarnz/vial-http')
 call dein#add('leafgarland/typescript-vim')
 call dein#add('peitalin/vim-jsx-typescript')
 
