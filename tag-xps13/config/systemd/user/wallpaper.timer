@@ -1,0 +1,10 @@
+[Unit]
+Description=Periodically change wallpaper
+
+[Timer]
+OnBootSec=1h
+OnUnitActiveSec=1h
+AccuracySec=50s
+
+[Install]
+WantedBy=mystuff.target

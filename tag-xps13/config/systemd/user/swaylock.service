@@ -1,0 +1,13 @@
+[Unit]
+Description=Automatic locking
+
+[Service]
+Environment=DISPLAY=:0
+ExecStart=/usr/bin/swayidle -w \
+ timeout 300 'swaylock -f -i ~/.wallpapers/wallpaper' \
+ timeout 600 'swaymsg "output * dpms off"' \
+ resume 'swaymsg "output * dpms on"' \
+ before-sleep 'swaylock -f -i ~/.wallpapers/wallpaper'
+
+[Install]
+WantedBy=mystuff.target

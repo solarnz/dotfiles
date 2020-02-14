@@ -1,0 +1,9 @@
+[Unit]
+Description=Automatic wallpaper changing
+
+[Service]
+Environment=DISPLAY=:0
+ExecStart=/usr/bin/bash -c "\
+    cd ~/.wallpapers && rm -f wallpaper && ln -s \"$(ls | sort -R | head -n 1)\" wallpaper"
+[Install]
+WantedBy=mystuff.target
