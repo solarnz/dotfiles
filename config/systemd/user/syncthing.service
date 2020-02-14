@@ -4,6 +4,7 @@ Description=Syncthing
 [Service]
 Type=simple
 Environment=DISPLAY=:0
+Environment=SYNCTHING_STATUS_BACKEND=AppIndicator
 ExecStart=/usr/bin/syncthing-gtk -m
 
 [Install]
