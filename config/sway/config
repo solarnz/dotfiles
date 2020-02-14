@@ -14,12 +14,13 @@ set $mod1 Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
-font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+#font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # The font above is very space-efficient, that is, it looks good, sharp and
 # clear in small sizes. However, if you need a lot of unicode glyphs or
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose a FreeType font, such as:
 # font pango:DejaVu Sans Mono 10
+font pango:Roboto Mono Medium 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -39,6 +40,8 @@ bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
+
+bindsym $mod+Tab workspace back_and_forth
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -175,6 +178,8 @@ mode "move" {
 }
 bindsym $mod+m mode "move"
 
+bindsym $mod+Delete exec swaylock -f -i ~/.wallpapers/wallpaper
+bindsym Print exec grim -g "$(slurp)"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -183,6 +188,8 @@ bar {
     swaybar_command waybar
     tray_output *
 }
+
+titlebar_padding 1
 
 # Start misc programs / scripts
 exec systemctl --user start mystuff.target
@@ -197,16 +204,8 @@ for_window [class="^Google-chrome.*$" instance="^crx_gaedmjdfmmahhbjefcbgaolhhan
 bindsym XF86MonBrightnessUp exec "brightnessctl s 5%+"
 bindsym XF86MonBrightnessDown exec "brightnessctl s 5%-"
 
-output eDP-1 {
-    background "#000000" solid_color
-    scale 2
-}
+bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPlay exec playerctl play-pause
 
-input 1:1:AT_Translated_Set_2_keyboard {
-    xkb_options caps:ctrl_modifier,ctrl:swap_lalt_lctl
-}
-
-input 1739:30383:CUST0001:00_06CB:76AF_Touchpad {
-    tap enabled
-    tap_button_map lmr
-}
+include ~/.config/sway/*.conf
