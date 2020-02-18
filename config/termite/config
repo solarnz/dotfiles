@@ -41,48 +41,38 @@ scrollback_lines = -1
 #scrollbar = off
 
 [colors]
-# If both of these are unset, cursor falls back to the foreground color,
-# and cursor_foreground falls back to the background color.
-#cursor = #dcdccc
-#cursor_foreground = #dcdccc
+# Base16 Solarnz
+# Scheme: Chris Kempson (http://chriskempson.com)
 
-#foreground = #dcdccc
-#foreground_bold = #ffffff
-#background = #3f3f3f
+foreground      = #d0d0d0
+foreground_bold = #d0d0d0
+cursor          = #d0d0d0
+background      = #151515
 
-# 20% background transparency (requires a compositor)
-#background = rgba(63, 63, 63, 0.8)
+# 16 color space
+color0  = #151515
+color1  = #fb9fb1
+color2  = #acc267
+color3  = #ddb26f
+color4  = #6fc2ef
+color5  = #e1a3ee
+color6  = #12cfc0
+color7  = #d0d0d0
+color8  = #808080
+color9  = #fb9fb1
+color10 = #acc267
+color11 = #ddb26f
+color12 = #6fc2ef
+color13 = #e1a3ee
+color14 = #12cfc0
+color15 = #f5f5f5
 
-# If unset, will reverse foreground and background
-highlight = #2f2f2f
-
-# Colors from color0 to color254 can be set
-color0 = #3f3f3f
-color1 = #705050
-color2 = #60b48a
-color3 = #dfaf8f
-color4 = #506070
-color5 = #dc8cc3
-color6 = #8cd0d3
-color7 = #dcdccc
-color8 = #709080
-color9 = #dca3a3
-color10 = #c3bf9f
-color11 = #f0dfaf
-color12 = #94bff3
-color13 = #ec93d3
-color14 = #93e0e3
-color15 = #ffffff
-
-[hints]
-#font = Monospace 12
-#foreground = #dcdccc
-#background = #3f3f3f
-#active_foreground = #e68080
-#active_background = #3f3f3f
-#padding = 2
-#border = #3f3f3f
-#border_width = 0.5
-#roundness = 2.0
+# 256 color space
+color16 = #eda987
+color17 = #deaf8f
+color18 = #202020
+color19 = #303030
+color20 = #b0b0b0
+color21 = #e0e0e0
 
 # vim: ft=dosini cms=#%s
