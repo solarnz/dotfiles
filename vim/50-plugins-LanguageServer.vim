@@ -5,13 +5,12 @@ let g:LanguageClient_serverCommands = {
     \ 'python': ['pyls'],
     \ 'javascript': ['javascript-typescript-stdio'],
     \ 'javascript.jsx': ['javascript-typescript-stdio'],
-    \ 'go': ['gopls'],
-    \ 'php': ['php-language-server'],
+    \ 'go': ['/home/chris/go/bin/gopls'],
     \ 'rust': ['rls'],
     \ 'c': ['cquery'],
     \ }
 
-let g:LanguageClient_useVirtualText = 0
+"let g:LanguageClient_useVirtualText = 0
 let g:LanguageClient_hoverPreview = "Never"
 
 nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
