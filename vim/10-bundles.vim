@@ -75,7 +75,7 @@ call dein#add('junegunn/fzf.vim')
 call dein#add('mileszs/ack.vim')
 
 call dein#add('autozimu/LanguageClient-neovim', {
-    \  'branch': 'next',
+    \  'rev': 'next',
     \ 'build': 'bash install.sh',
     \ })
 
