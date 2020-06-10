@@ -25,8 +25,8 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xfce4-terminal
-bindsym $mod1+Return exec xfce4-terminal
+bindsym $mod+Return exec termite
+bindsym $mod1+Return exec termite
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -42,21 +42,13 @@ bindsym $mod+Shift+b move scratchpad
 bindsym $mod+g exec "echo -e 1000\\n2000\\n3000\\n4000\\n5000\\n6000\\n6500 | dmenu -p 'Gamma (1000-6500)' -l 10| xargs -I{} redshift -O {}"
 
 
-bindsym Print exec "mpc prev"
-bindsym XF86AudioPrev exec "mpc prev"
-bindsym Shift+Print exec "mpc volume -1"
-bindsym XF86AudioLowerVolume exec "mpc volume -1"
+bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86Tools exec autorandr -c
 
-bindsym Scroll_Lock exec "mpc toggle"
-bindsym XF86AudioPlay exec "mpc toggle"
+bindsym Print exec scrot -s
 
-bindsym Pause exec "mpc next"
-bindsym XF86AudioNext exec "mpc next"
-bindsym Shift+Pause exec "mpc volume +1"
-bindsym XF86AudioRaiseVolume exec "mpc volume +1"
-bindsym XF86MonBrightnessDown exec "xbacklight -dec 10"
-bindsym XF86MonBrightnessUp exec "xbacklight -inc 10"
-bindsym XF86AudioMute exec "pulseaudio-ctl mute"
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
