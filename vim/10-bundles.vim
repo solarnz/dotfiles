@@ -92,13 +92,11 @@ call dein#add("rodjek/vim-puppet") " Puppet language support
 call dein#add('PotatoesMaster/i3-vim-syntax') " i3 configuration highlighting
 call dein#add('fatih/vim-go') " Golang language support
 call dein#add('hynek/vim-python-pep8-indent') " Better python indentation support
-call dein#add('kchmck/vim-coffee-script') " Coffee script language support
 call dein#add('markcornick/vim-terraform')
 call dein#add('othree/html5.vim')
 call dein#add('pangloss/vim-javascript') " Javascript language support
 call dein#add('mxw/vim-jsx')
 call dein#add('shime/vim-livedown')
-call dein#add('solarnz/nagios.vim') " Nagios syntax highlighting
 call dein#add('solarnz/python.vim') " Python syntax highlighting
 call dein#add('solarnz/thrift.vim') " Thrift language support
 call dein#add('vim-ruby/vim-ruby')
