@@ -12,6 +12,7 @@ autoload -U colors
 colors
 
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$PATH:$HOME/.yarn/bin"
 
 export EDITOR=nvim
 
