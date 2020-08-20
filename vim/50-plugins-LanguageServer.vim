@@ -8,6 +8,7 @@ let g:LanguageClient_serverCommands = {
     \ 'go': ['/home/chris/go/bin/gopls'],
     \ 'rust': ['rls'],
     \ 'c': ['cquery'],
+    \ 'php': ['/usr/bin/intelephense', '--stdio'],
     \ }
 
 "let g:LanguageClient_useVirtualText = 0
