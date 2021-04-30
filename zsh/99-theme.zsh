@@ -44,6 +44,10 @@ vcs_info_wrapper() {
     echo "%{%B%}${vcs_info_msg_0_}%{$reset_color%}$del"
   fi
 }
-RPROMPT=$'$(vcs_info_wrapper)'
+
+kube_ps1_wrapper() {
+    type kube_ps1 &>/dev/null && kube_ps1
+}
+RPROMPT=$'$(kube_ps1_wrapper)$(vcs_info_wrapper)'
 
 # vim:ft=zsh
