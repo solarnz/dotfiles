@@ -14,5 +14,10 @@ if [[ -e $HOME/.zplug ]]; then
     export KUBE_PS1_ENABLED=off
     zplug 'jonmosco/kube-ps1', use:'kube-ps1.sh'
 
+
+    # zplug breaks the ZSH job management.
+    # See https://github.com/zplug/zplug/issues/374
+    [ -f $_zplug_lock ] && rm $_zplug_lock
+
     zplug load
 fi
