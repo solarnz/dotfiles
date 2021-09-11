@@ -5,4 +5,5 @@ alias sl="ls"
 
 alias ls="ls --color"
 
-alias nose="nosetests --with-yanc --with-watcher"
+alias fgc="git fzf-git-checkout"
+alias fdb="git delete-branches"
