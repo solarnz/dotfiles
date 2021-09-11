@@ -33,4 +33,7 @@ bindkey "^J" down-line-or-history # Ctrl-j
 bindkey "^K" up-line-or-history # Ctrl-k
 bindkey "^L" forward-char #Ctrl-l
 
+bindkey "^[[1;3D" beginning-of-line
+bindkey "^[[1;3C" end-of-line
+
 # vim:ft=zsh
