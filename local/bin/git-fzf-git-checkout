@@ -5,8 +5,8 @@ fzf-git-branch() {
 
     git branch --color=always --sort=-committerdate |
         grep -v HEAD |
-        fzf --height 50% --ansi --no-multi --preview-window right:65% \
-            --preview 'git log -n 50 --color=always --date=short --pretty="format:%C(auto)%cd %h%d %s" $(sed "s/.* //" <<< {})' |
+        fzf --ansi --no-multi --preview-window right:65% \
+            --preview 'git log -n 50 --color=always --date=short origin/master..$(sed "s/.* //" <<< {})' |
         sed "s/.* //"
 }
 
@@ -15,7 +15,7 @@ git rev-parse HEAD > /dev/null 2>&1 || return
 branch=$(fzf-git-branch)
 if [[ "$branch" = "" ]]; then
     echo "No branch selected."
-    return
+    exit
 fi
 
 # If branch name starts with 'remotes/' then it is a remote branch. By

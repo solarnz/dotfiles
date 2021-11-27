@@ -5,11 +5,12 @@ fzf-git-branch-multi() {
 
     git branch --color=always --sort=-committerdate |
         grep -v HEAD |
-        fzf --height 50% --ansi --multi --preview-window right:65% \
-            --preview 'git log -n 50 --color=always --date=short --pretty="format:%C(auto)%cd %h%d %s" $(sed "s/.* //" <<< {})' |
+        fzf --ansi --multi --preview-window right:65% \
+            --preview 'git log -n 50 --color=always --date=short origin/master..$(sed "s/.* //" <<< {})' |
         sed "s/.* //"
 }
 
-while IFS= read -r branch; do
+branches=$(fzf-git-branch-multi)
+for branch in $branches; do
     git branch -D $branch
-done <<< $(fzf-git-branch-multi)
+done
