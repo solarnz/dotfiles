@@ -177,6 +177,8 @@ mode "move" {
     bindsym Escape mode "default"
 }
 bindsym $mod+m mode "move"
+bindsym $mod+u exec rofi -show emoji -modi emoji
+bindsym $mod+Shift+Space exec rofi -show emoji -modi emoji
 
 bindsym $mod+Delete exec swaylock -f -i ~/.wallpapers/wallpaper
 bindsym Print exec grim -g "$(slurp)"
