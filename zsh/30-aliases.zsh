@@ -10,5 +10,5 @@ else
 fi
 
 
-alias fgc="git fzf-git-checkout"
-alias fdb="git delete-branches"
+alias fgc="git-fzf-git-checkout"
+alias fdb="git-delete-branches"

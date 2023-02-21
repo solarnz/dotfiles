@@ -5,7 +5,7 @@ let g:LanguageClient_serverCommands = {
     \ 'python': ['pyls'],
     \ 'javascript': ['javascript-typescript-stdio'],
     \ 'javascript.jsx': ['javascript-typescript-stdio'],
-    \ 'go': ['/home/chris/go/bin/gopls'],
+    \ 'go': ['~/go/bin/gopls'],
     \ 'rust': ['rls'],
     \ 'c': ['cquery'],
     \ 'php': ['/usr/bin/intelephense', '--stdio'],
