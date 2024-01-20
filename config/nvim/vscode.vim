@@ -30,16 +30,14 @@ map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 nnoremap <silent> <Leader>] :vsp <CR><C-W>l<CR>:exec("tag ".expand("<cword>"))<CR>
 nnoremap <Leader>h <Cmd>call VSCodeNotify('workbench.action.previousEditorInGroup')<CR>
 nnoremap <Leader>l <Cmd>call VSCodeNotify('workbench.action.nextEditorInGroup')<CR>
-nnoremap <Leader>n :tabnew <CR>
-nnoremap <Leader>q :q <CR>
+nnoremap <Leader>q <Cmd>call VSCodeNotify('workbench.action.closeActiveEditor')<CR>
 nnoremap <Leader>Q :wq<CR>
-nnoremap <C-W>t :tabnew <CR>
 nnoremap <Leader><Backspace> :undo <CR>
-nnoremap <Leader>b :action RecentFiles<CR>
+nnoremap <Leader>b <Cmd>call VSCodeNotify('workbench.action.quickOpen')<CR>
 nnoremap <Leader>e :NERDTreeFind<CR>
 nnoremap <Leader>- :NERDTreeFind<CR>
-nnoremap <Leader>t :action SearchEverywhere<CR>
-nnoremap tt :action SearchEverywhere<CR>
+nnoremap <Leader>t <Cmd>call VSCodeNotify('workbench.action.findInFiles')<CR>
+nnoremap tt <Cmd>call VSCodeNotify('workbench.action.findInFiles')<CR>
 nnoremap tr :action MoveEditorToOppositeTabGroup<CR>
 nnoremap - <Cmd>call VSCodeNotify('workbench.view.explorer')<CR>
 nnoremap ` :
@@ -67,13 +65,13 @@ nnoremap gf <Cmd>call VSCodeNotify('editor.action.quickFix')<CR>
 
 
 " Easier window movement keys for the teck.
-nnoremap tn :split <CR>
-nnoremap tv :vsplit <CR>
+nnoremap tn <Cmd>call VSCodeNotify('workbench.action.splitEditorDown') <CR>
+nnoremap tv <Cmd>call VSCodeNotify('workbench.action.splitEditorRight') <CR>
 
-nnoremap th <C-W>h
-nnoremap tj <C-W>j
-nnoremap tk <C-W>k
-nnoremap tl <C-W>l
+nnoremap th <Cmd>call VSCodeNotify('workbench.action.navigateLeft') <CR>
+nnoremap tj <Cmd>call VSCodeNotify('workbench.action.navigateDown') <CR>
+nnoremap tk <Cmd>call VSCodeNotify('workbench.action.navigateUp') <CR>
+nnoremap tl <Cmd>call VSCodeNotify('workbench.action.navigateRight') <CR>
 
 " Easy shortcut to switch back to normal mode
 inoremap jj <esc>
@@ -101,3 +99,7 @@ set relativenumber
 set hlsearch
 set laststatus=2
 set incsearch
+
+
+" Hide the sidebar whenever neovim regains focus
+autocmd WinEnter * call VSCodeNotify('workbench.action.closeSidebar')
