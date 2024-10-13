@@ -105,6 +105,8 @@ call dein#add('dhruvasagar/vim-table-mode')
 
 call dein#add('tpope/vim-dadbod')
 
+call dein#add('nvim-treesitter/nvim-treesitter', {'hook_post_update': 'TSUpdate'})
+
 call dein#end()
 
 if has('vim_starting') && s:install_plugins == 1
