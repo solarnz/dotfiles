@@ -1,0 +1,117 @@
+# Ghostty Configuration
+# Converted from kitty config
+
+# Font Configuration
+font-family = "Berkeley Mono"
+font-size = 11
+font-feature = -calt  # disable ligatures
+
+# Scrollback
+scrollback-limit = 20000
+
+# Window Configuration
+window-decoration = false
+window-theme = dark
+
+# Tab Configuration
+gtk-tabs-location = top
+
+# Mouse Configuration
+copy-on-select = true
+mouse-hide-while-typing = true
+
+# Focus Configuration
+focus-follows-mouse = true
+
+# Theme Configuration (Base16 Solarnz)
+background = 151515
+foreground = e0e0e0
+cursor-color = e0e0e0
+selection-background = e0e0e0
+selection-foreground = 151515
+
+# Normal colors
+palette = 0=#151515
+palette = 1=#fb9fb1
+palette = 2=#acc267
+palette = 3=#ddb26f
+palette = 4=#6fc2ef
+palette = 5=#e1a3ee
+palette = 6=#12cfc0
+palette = 7=#e0e0e0
+
+# Bright colors
+palette = 8=#808080
+palette = 9=#fb9fb1
+palette = 10=#acc267
+palette = 11=#ddb26f
+palette = 12=#6fc2ef
+palette = 13=#e1a3ee
+palette = 14=#12cfc0
+palette = 15=#f5f5f5
+
+# Extended base16 colors
+palette = 16=#eda987
+palette = 17=#deaf8f
+palette = 18=#202020
+palette = 19=#303030
+palette = 20=#a0a0a0
+palette = 21=#f0f0f0
+
+# Keybindings
+# Basic clipboard operations
+keybind = super+c=copy_to_clipboard
+keybind = super+v=paste_from_clipboard
+
+# Tab navigation
+keybind = super+left=previous_tab
+keybind = super+right=next_tab
+keybind = super+shift+left=move_tab_previous
+keybind = super+shift+right=move_tab_next
+
+# Direct tab access
+keybind = super+1=goto_tab:1
+keybind = super+2=goto_tab:2
+keybind = super+3=goto_tab:3
+keybind = super+4=goto_tab:4
+keybind = super+5=goto_tab:5
+keybind = super+6=goto_tab:6
+keybind = super+7=goto_tab:7
+keybind = super+8=goto_tab:8
+keybind = super+9=goto_tab:9
+keybind = super+0=goto_tab:10
+
+# Tab management
+keybind = super+t=new_tab
+
+# Split management (ghostty has built-in split support)
+keybind = super+d=new_split:right
+keybind = super+shift+d=new_split:down
+
+# Window/split navigation with Alt+hjkl
+keybind = alt+h=goto_split:left
+keybind = alt+l=goto_split:right
+keybind = alt+k=goto_split:top
+keybind = alt+j=goto_split:bottom
+
+# Split resizing with Shift+arrows
+keybind = shift+up=resize_split:up,10
+keybind = shift+down=resize_split:down,10
+keybind = shift+left=resize_split:left,10
+keybind = shift+right=resize_split:right,10
+
+# Fullscreen toggle
+keybind = f10=toggle_fullscreen
+
+# New splits with F-keys
+keybind = f5=new_split:down
+keybind = f6=new_split:right
+
+# Note: Some kitty features don't have direct ghostty equivalents:
+# - cmd+b leader key combinations (not directly supported)
+# - Custom tab title templates (ghostty has simpler tab titles)
+# - Powerline tab style (ghostty uses simpler tab styling)
+# - Layout rotation (ghostty has different split management)
+# - Launch with stdin from scrollback (f1 mapping)
+# - Visual bell duration (not configurable in ghostty)
+# - Middle mouse button paste from selection buffer
