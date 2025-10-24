@@ -54,13 +54,8 @@ install_rcm() {
 
     # Check if rcm is already installed
     if command_exists rcup && [[ -x "${INSTALL_PREFIX}/bin/rcup" ]]; then
-        print_warning "rcm is already installed at ${INSTALL_PREFIX}/bin/rcup"
-        read -p "Do you want to reinstall? (y/N) " -n 1 -r
-        echo
-        if [[ ! $REPLY =~ ^[Yy]$ ]]; then
-            print_info "Skipping rcm installation"
-            return 0
-        fi
+        print_info "rcm is already installed at ${INSTALL_PREFIX}/bin/rcup, skipping installation"
+        return 0
     fi
 
     # Create secure temporary directory
