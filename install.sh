@@ -9,7 +9,8 @@ readonly YELLOW='\033[1;33m'
 readonly NC='\033[0m' # No Color
 
 # Configuration
-readonly RCM_VERSION="1.2.3"
+# Check for latest version at: https://github.com/thoughtbot/rcm/releases
+readonly RCM_VERSION="1.3.4"
 readonly INSTALL_PREFIX="${HOME}/.local"
 
 # Print functions
