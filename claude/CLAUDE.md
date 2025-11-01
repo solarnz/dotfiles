@@ -15,6 +15,8 @@
 - PREFER making small, targeted changes, easy to review
 - When naming a git branch, it should be in the format of ctrotman/{area}/{feature} - my name is `ctrotman`.
 - When doing a git commit, prefer to use the format of `{short name of area}: {short description of feature}`
+- When creating a pull request, use the similar format as the git subject for the pull request subject
 - Before pushing a commit to a pull request after making changes, make sure you verify your changes
+- I'm super forgetful, before working on anything, make sure the main or master branch is up to date.
 
 </global instructions>
